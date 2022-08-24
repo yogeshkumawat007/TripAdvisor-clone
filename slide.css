@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.carousel{
+    margin: auto;
+    width: 90%;
+    gap: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.carosuel-cell:before{
+    display: block;
+    
+}
+.carosuel-cell{
+    height: 200px;
+    
+}
+.carosuel-cell > img{
+    
+    width: 100%;
+    height: 200px;
+   object-fit: cover;
+   margin-left: 10px;
+}
