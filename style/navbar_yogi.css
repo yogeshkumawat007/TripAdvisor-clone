@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.home_main_navbar_yogi{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.main_navbar_logo_yogi{
+    width: 15%;
+}
+.main_navbar_logo_yogi img{
+    width: 100%;
+}
+
+/* .home_main_navbar_searchbox_yogi{
+    border: 1px solid black;
+    width: 40%;
+} */
+
+.navbar_signup_section_yogi{
+    width: 35%;
+    display: flex;
+    gap: 0% 2%;
+}
+
+.navbar_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 1.5% 3%;
+    border-radius: 40px 40px 40px 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navbar_flex:hover{
+    background-color: rgb(248, 244, 244);
+}
+
+.navbar_flex p,span{
+    /* background-color: red; */
+    margin-left: 4%;
+
+}
+
+#navbar_signIn_yogi{
+    background-color: black;
+    color: white;
+}
