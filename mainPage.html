@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore hotel </title>
+    <link rel="stylesheet" href="mainPage.css">
+</head>
+<body>
+    <div class="hBanner_vw">
+        <img src="https://images.pexels.com/photos/248867/pexels-photo-248867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="loading.">
+    </div>
+     
+    <div class="Title_vw">
+        <span id="Title_city_vw"> Benguluru  </span> <span id="title_vw"> Places and Hotels to Stay</span>
+    </div>
+
+    <span id="Data_title_vw">------ Enter Dates to find the best value ------</span>
+     
+
+        <div class="date1">check In...<br><input type="date" id="checkIN_vw"></div>
+        <div class="date2">check Out...<br><input type="date" id="checkOut_vw"></div>
+         <div class="guest">Guest...<div class="guestDetails_vw">
+         
+            <span><span>1 </span> room ,</span>
+            <span> <span>2 </span> adults  ,</span>
+            <span><span>0 </span> childrens</span>
+
+
+        </div>
+    </div> 
+
+ <!-- just for style -->
+
+   <div class="green"></div>
+   <div class="red"></div>
+   <div class="grey"></div>
+
+    <!-- adding guest div's -->
+    <div class="adding_guest_vw">
+        <p class="cross_button">x</p>
+         <div class="guest_img">
+            <img src="guest.jpg" alt="loading....">
+         </div>
+         <div class="guest_buttons">
+            <div class="rooms">
+               <span class="minus_btn_vw"> -</span>
+               <span id="num">0</span>
+               <span class="plus_btn_vw"> + </span>
+
+            </div>
+            <div class="adults">
+                <span class="minus_btn_vw"> -</span>
+                <span id="num">0</span>
+                <span class="plus_btn_vw"> + </span>
+ 
+             </div>
+               <div class="children">
+                <span class="minus_btn_vw"> -</span>
+                <span id="num">0</span>
+                <span class="plus_btn_vw"> + </span>
+ 
+             </div>
+
+             <button class="update_btn_vw">Update</button>
+        
+
+         
+    
+</div>
+
+       
+ 
+
+</body>
+</html>
+<script>
+    document.querySelector(".guest").addEventListener("click",function(){
+       let div=document.querySelector(".adding_guest_vw");
+       div.style.display="flex";
+    });
+
+    document.querySelector(".cross_button").addEventListener("click",function(){
+       let div=document.querySelector(".adding_guest_vw");
+       div.style.display="none";
+
+    })
+    
+
+</script>
