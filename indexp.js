@@ -100,4 +100,6 @@ function append(arg){
 append(places);
 
 
+// faq
+
 
