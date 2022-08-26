@@ -3,14 +3,15 @@ body{
 }
 
 #pj-sidebar-main{
-    position: absolute;
-  
+    position: absolute;  
     width: 19%;
     left:3%;
     top:55%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: rgb(94, 94, 94);
     font-size: 13px;
+    border: 1px solid black;
+    margin-top: 2.2%;
    
 }
 #gmap_canvas{
