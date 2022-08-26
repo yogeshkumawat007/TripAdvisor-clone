@@ -38,6 +38,7 @@
     border: 1px solid yellow;
     gap: 20px;
     margin-bottom: 50px;
+    position: relative;
 
 }
 #container_p>div>img{
@@ -46,7 +47,7 @@
     
 }
 #container_p>div{
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     margin-top: 10px;
 }
 
@@ -98,5 +99,114 @@ margin-left: 18px;
 #download .text{
     margin-left: 18px;
 }
+
+.cir_main{
+    /* border: 1px solid red; */
+    height: 11px;
+    gap: 3px;
+    display: flex;
+    margin: 6px;
+    
+}
+ .cir_main >div {
+    border-radius: 50%;
+    height: 10px;
+    width: 3%;
+    border: 1px solid  #00aa6c;
+    background-color:  #00aa6c
+}
+
+.rev{
+    /* border: 1px solid red; */
+    height: 25px;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin-top: 6px;
+}
+.rev img{
+    border-radius: 50%; 
+}
+
+#content_p{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid blueviolet; */
+    height: 400px;
+    gap: 15px;
+
+}
+
+.parent_p{
+    display: flex;
+    justify-content: space-between;
+}
+#content_p >div >div{
+    /* border:  1px solid black; */
+    display: flex;
+    
+}
+.left{
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    margin-top: 5px;
+}
+.right{
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    margin-top: 5px;
+}
+.left_1{
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.left_img img{
+border-radius: 50%;
+
+height: 30px;
+width: 30px;
+}
+
+
+.fa{
+   margin-left: 20px;
+   margin-right: 10px;
+}
+#content_p  .par{
+    font-size: 10px;
+      
+
+}
+
+.divicon{
+    border: 1px solid white;
+    padding: 1%;
+    position: absolute;
+    z-index: 1;
+    margin-top: -30%;
+    /* margin-right: -80%; */
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 26%;
+    cursor: pointer;
+}
+
+.name{
+    color: rgb(38, 37, 37);
+    font-size: 14px;
+
+}
+h4{
+    /* margin-top: 5px; */
+    margin-bottom: 8px;
+}
+h2{
+    margin-bottom: 16px;
+}
+
 
 
