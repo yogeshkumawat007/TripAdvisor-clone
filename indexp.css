@@ -127,9 +127,7 @@ margin-left: 18px;
 .rev img{
     border-radius: 50%; 
 }
-.cir{
-     /* border: 1px solid red;  */
-} 
+
 #content_p{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -138,10 +136,7 @@ margin-left: 18px;
     gap: 15px;
 
 }
-#content_p>div{
-    /* border: 1px solid black; */
-    
-}
+
 .parent_p{
     display: flex;
     justify-content: space-between;
