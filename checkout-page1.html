@@ -12,54 +12,70 @@
         *{
             margin: 0%;
             padding: 0%;
-            /* width: 90%;
-            margin: auto; */
-           /* margin-left: 25px;
-           margin-right: 25px; */
+            width: 90%;
+            margin: auto;
+           line-height: 25px;
         } 
         #pj-top{
-            border: 1px solid red;
+            border: 0px solid red;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             display: flex;
             text-align: left;
+            margin-bottom: 20px;
         }
         #pj-filter-div{
-            border: 1px solid blue;
+            border: 0px solid blue;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             display: flex;
             justify-content: end;
             gap: 15px;
+            margin-bottom: 20px;
         }
         #pj-rate-div{
-            border: 1px solid green;
+            border: 0px solid green;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-bottom: 15px;
 
         }
         img{
             width: 200px;
         }
         #pj-container{
-            width: 70%;
+            border: 1px solid grey;
+            border: 1px solid black;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 60%;
+            margin-bottom: 20px;
+            margin-left: 5%;
+             background-color: #fef9f9;
+             margin-top: 10px;
         }
         #pj-hotel-div{
+            border: 0px solid black;
             display: flex;
        
         }
         #pj-hotel-div-1{
+            border:0px solid yellow;
             display: flex;
-            width: 100%;
-          justify-content: space-evenly;
+            width: 200%;
+          justify-content: space-between;
         }
         #pj-hotel-div-1 div{
-           /* margin-right: 50px; */
+            border: 0px solid green;
+          margin-top: 10px;
           justify-content: space-between;
         }
         #pj-your-stay{
             border: 1px solid red;
             position: absolute;
-            width: 25%;
+            width: 20%;
             line-height: 40px;
-            left: 70vw;
-            top: 20vh;
+            left: 65vw;
+            top: 30vh;
         }
         #pj-your-stay-2{
+            border: 0px solid green;
             display: flex;
             justify-content: space-between;
         }
@@ -67,9 +83,9 @@
             border: 1px solid red;
             position: absolute;
             line-height: 40px;
-            width: 25%;
-            left: 70vw;
-            top: 50vh;
+            width: 20%;
+            left: 65vw;
+            top: 60vh;
         }
         #pj-member-2 li{
             display: flex;
@@ -104,55 +120,55 @@
     <!-- top end -->
 
     <!-- hotel details div start -->
-    <div id="pj-container" style="border: 1px solid black;">
-        <div id="pj-hotel-div" style="border: 1px solid red;">
-            <div style="border:1px solid yellow">
+    <div id="pj-container">
+        <div id="pj-hotel-div">
+            <div>
                 <img src="https://be.synxis.com/shs-ngbe-image-resizer/images/hotel/4351/images/room/deluxe_room-king.jpg" alt="">
             </div>
-            <div id="pj-hotel-div-1" style="border:1px solid yellow">
-                <div  style="border:1px solid green">
+            <div id="pj-hotel-div-1" >
+                <div >
                     <p>Delux King Room</p>
-                    <p>Sleep 3 | 1King | 40m*m</p>
+                    <p>Sleep 3 | 1 King | 40Sqm.</p>
                     <p>Guaranteed eith Credit Card</p>
                     <p>KING BED 40 SQM. FREE INTERNET </p>
                     <P>BATHTUB 40 INCH FLAT TV SAFE</P>
                 </div>
-                <div style="border:1px solid green">
-                    <p>RS.6,600</p>
+                <div >
+                    <p >RS.6,600</p>
                     <p>Per Night</p>
                     <p>Excluding Taxes & Fees</p>
-                    <button>BOOK NOW</button>
+                    <button >BOOK NOW</button>
                 </div>
             </div>
         </div>
-        <div style="border: 1px solid red;">
+        <div >
             <p>Desk or Workplace</p>
             <p>Air Conditioning</p>
         </div>
     </div>
 
-    <div id="pj-container" style="border: 1px solid black;">
-        <div id="pj-hotel-div" style="border: 1px solid red;">
-            <div style="border:1px solid yellow">
+    <div id="pj-container" >
+        <div id="pj-hotel-div" >
+            <div >
                 <img src="https://be.synxis.com/shs-ngbe-image-resizer/images/hotel/4351/images/room/deluxe_room-king.jpg" alt="">
             </div>
-            <div id="pj-hotel-div-1" style="border:1px solid yellow">
-                <div  style="border:1px solid green">
+            <div id="pj-hotel-div-1" >
+                <div  >
                     <p>Delux King Room</p>
                     <p>Sleep 3 | 1King | 40m*m</p>
                     <p>Guaranteed eith Credit Card</p>
                     <p>KING BED 40 SQM. FREE INTERNET </p>
                     <P>BATHTUB 40 INCH FLAT TV SAFE</P>
                 </div>
-                <div style="border:1px solid green">
-                    <p>RS.6,600</p>
+                <div >
+                    <p id="pj-hotel-price-1">RS.6,000</p>
                     <p>Per Night</p>
                     <p>Excluding Taxes & Fees</p>
-                    <button>BOOK NOW</button>
+                    <button onclick="pjsetprice()">BOOK NOW</button>
                 </div>
             </div>
         </div>
-        <div style="border: 1px solid red;">
+        <div >
             <p>Desk or Workplace</p>
             <p>Air Conditioning</p>
         </div>
@@ -167,9 +183,10 @@
             <P>Check-out:-Befor 12:00 PM</P>
             <p>2 Adults</p>
         </div>
+        <hr>
         <div id="pj-your-stay-2">
             <div>Total:</div>
-            <div>RS 0.00</div>
+            <div><span id="pj-total-span">RS 0.00</span></div>
         </div>
     </div>
     <!-- your stay end -->
@@ -206,3 +223,13 @@
     </div>
 </body>
 </html>
+<script>
+    let pjsetprice=()=>{
+        let total=document.getElementById("pj-hotel-price-1").innerText;
+    console.log(total)
+
+    let price=document.getElementsByClassName("pj-total-span")
+    price.innerText=total;
+    }
+    
+</script>
