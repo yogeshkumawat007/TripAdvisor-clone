@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: pointer;
     
 
 }
@@ -15,7 +16,7 @@
 }
 
 .Title_vw{
-   position: absolute;
+   position:absolute;
     /* z-index:1; */
     top: 18%;
     left: 26%;
@@ -78,22 +79,6 @@ font-size: 18px;
    width: 20%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-/* .guest,.guestDetails_vw{
-    border: 1px solid red;
-    text-align: center;
-    opacity: 0.9;
-    position: absolute;
-    font-size: 13px;
-    top: 33%;
-    left: 65%;
-    color:rgb(103, 103, 103);
-    background-color: white;
-    width: 20%;
-    height: 40px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-} */
 
 .guest{
   
@@ -194,19 +179,19 @@ height: 39px;
     margin-top: 45px; 
 }
 
-#num{
+#num , #num2,#num3{
     font-size:22px;
     font-weight: bolder;
-    padding: 6px 30px 6px 30px;
+    padding: 6px 20px 6px 20px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.minus_btn_vw{
+.minus_btn_vw,.minus_btn_vw2,.minus_btn_vw3{
     font-size:22px;
     font-weight: bolder;
     padding: 6px 25px 6px 25px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.plus_btn_vw{
+.plus_btn_vw,.plus_btn_vw2,.plus_btn_vw3{
     font-size:22px;
     font-weight: bolder;
     margin-top: 20px;
@@ -259,9 +244,11 @@ height: 39px;
     height: 100%;
 }
   .container1_vw {
-    position: relative;
+    /* position: relative; */
     /* border: 1px solid black; */
     width: 100%;
+    top: 30%;
+
     margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 35px;
@@ -315,7 +302,7 @@ height: 39px;
   }
   
   
-  #sponsor{
+  .sponsor{
     padding: 1% 2%;
     background-color: rgb(226, 226, 226);
     border-radius: 7px;
@@ -388,39 +375,65 @@ height: 39px;
     width: 70%;
     height: 23%;
   }
-  #customer_review{
+  .customer_review{
     color: rgb(79, 79, 79);
     text-align:center;
    
   font-size: 13px;
   font-family: sans-serif;
-  /* overflow-x: scroll; */
+  
   }
   
   .service{
-    /* border: 1px solid gold; */
     margin-top: 20px;
   }
   .service>img{
     width: 110px;
     height: 100px;
-    /* border: 2px solid red;  */
      margin-left: 20%;
   }
 
   .appendingCards{
-    /* border: 1px solid red; */
+   
     width: 71%;
-    
-     /* width: fit-content; */
-    margin-left: 21%;
+    margin-left: 24%;
+   
 
   }
   .c_review{
-    /* border: 1px solid red; */
     width:100%;
     height: 120px;
     margin-bottom: 7px;
     overflow: auto;
   }
+
+  #select_price{
+   
+    width: 310px;
+    height: 33px;
+   color: rgb(79, 79, 79);
+
+
+  }
+
+  .select_price{
+    margin-left: 68%;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    color: rgb(79, 79, 79);
+
+  }
+
+  .priceData{
+    /* border: 1px solid red; */
+    width: 63%;
+    height: 65vh;
+    margin-left: 26%;
+  }
+  .pricedaata{
+    width: 100%;
+  }
+
+
+
 
