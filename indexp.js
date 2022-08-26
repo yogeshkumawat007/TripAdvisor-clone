@@ -131,9 +131,9 @@ function append(arg){
       review.append(rg,rp)
 
 
-        let img = document.createElement("img");
+    let img = document.createElement("img");
         img.src = ele.img;
-        let title = document.createElement("p");
+    let title = document.createElement("p");
     title.innerText = ele.title;
 
     let des = document.createElement("p");
@@ -142,7 +142,18 @@ function append(arg){
     let para = document.createElement("p");
     para.innerText = ele.para;
 
-        div.append(img,name, circle,title,des,review,para);
+    let divicon = document.createElement("div");
+    divicon.setAttribute("class","divicon");
+
+
+    let icon = document.createElement("span");
+    icon.setAttribute("class","material-symbols-outlined");
+    icon.innerText = " favorite";
+    divicon.append(icon);
+    
+
+
+        div.append(img, divicon,name, circle,title,des,review,para);
         container.append(div);
 
     })

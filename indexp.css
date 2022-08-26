@@ -38,6 +38,7 @@
     border: 1px solid yellow;
     gap: 20px;
     margin-bottom: 50px;
+    position: relative;
 
 }
 #container_p>div>img{
@@ -46,7 +47,7 @@
     
 }
 #container_p>div{
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     margin-top: 10px;
 }
 
@@ -108,7 +109,7 @@ margin-left: 18px;
 }
  .cir_main >div {
     border-radius: 50%;
-    height: 400px;
+    height: 10px;
     width: 3%;
     border: 1px solid  #00aa6c;
     background-color:  #00aa6c
@@ -156,9 +157,6 @@ margin-left: 18px;
     
     
 }
-
-
-
  #content_p  div img{
 width: 28%;
 height: 32px;
@@ -171,7 +169,21 @@ border-radius: 50%;
 }
 #content_p  .par{
     font-size: 10px;
-    
-   
+      
 
 }
+
+.divicon{
+    border: 1px solid white;
+    padding: 1%;
+    position: absolute;
+    z-index: 1;
+    margin-top: -30%;
+    /* margin-right: -80%; */
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 26%;
+    cursor: pointer;
+}
+
+
