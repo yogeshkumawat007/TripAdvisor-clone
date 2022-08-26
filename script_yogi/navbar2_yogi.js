@@ -8,6 +8,8 @@ searchCityName.addEventListener("keypress", function(event) {
 
         localStorage.setItem("cityName",JSON.stringify(city))
     }
+
+    window.location.href = "mainPage.html"
 })
 
 
