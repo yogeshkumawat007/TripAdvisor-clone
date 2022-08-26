@@ -1,9 +1,10 @@
 .upperFooter{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     background-color: #faf1ed;
-    padding: 1%;
+    padding: 0 1%;
     gap: 0 1%;
+    justify-content: space-between;
 }
 
 .upperFooter li{
@@ -32,14 +33,15 @@
 .upperFooter_left_part{
     display: flex;
     width: 50%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    
 }
 
 .upperFooter_right_part{
-    width: 50%;
-    text-align: center;
+    width: 36%;
+    /* text-align: center; */
     font-size: 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .upperFooter_right_part p{
@@ -62,37 +64,44 @@
 
 
 .lowerFooter{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #faf1ed;
     display: flex;
     gap: 0 1%;
-    padding: 2%;
+    /* padding: 2%; */
+    padding: 0 2%;
 }
 
 .lowerFooter_left_part{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 60%;
 }
 
 .lowerFooter_left_part > div {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
 }
 
 .lowerFooter_left_part > div:nth-child(1) > div:first-child{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 10%;
     /* display: flex; */
 }
 
+.lowerFooter_left_part > div:nth-child(1) > div:first-child img{
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin-top: 30%;
+}
+
 .copyrigth_whole_div{
-    border: 1px solid blue;   
+    /* border: 1px solid blue;    */
     /* display: flex; */
     width: 90%;
 }
 
 .copyrigth_whole_div > div:nth-child(2) div{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 80%;
     line-height: 0;
     display: flex;
@@ -123,7 +132,7 @@
 }
 
 .lowerFooter_right_part{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
 }
 
@@ -135,7 +144,7 @@
 }
 
 .lowerFooter_right_part > div:nth-child(1){
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     display: flex;
     justify-content: end;
@@ -144,10 +153,12 @@
 
 .lowerFooter_right_part > div:nth-child(2){
     display: flex;
-    gap: 0 4%;
-    border: 1px solid red;
+    gap: 0 3%;
+    /* border: 1px solid red; */
     justify-content: end;
-    /* padding: ; */
+    /* background-color: goldenrod; */
+    margin-top: 3%;
+    margin-right: 2%;
 }
 
 .fa-brands{
