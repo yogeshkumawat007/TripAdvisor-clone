@@ -201,7 +201,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="pjsetprice()">
 
       <!-- top start -->
       <div id="pj-top">
@@ -238,11 +238,11 @@
             <option value="prof">Prof.</option>
             <option value="rev">Rev.</option>
         </select>
-        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="First Name" id="pj-first-name">
         <input type="text" placeholder="Middle Name">
     </div>
     <div class="pj-contact-info-1">
-        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Last Name" id="pj-last-name">
         <input type="tel" placeholder="Phone">
     </div>
     <div>
@@ -327,11 +327,11 @@
         <div id="pj-checkout">
             <h1>Acknowledgement</h1>
             <div class="pj-checkout-1">
-                <input type="checkbox" >
+                <input type="checkbox" id="pj-privacy-term">
                 <p>I agree with the Privacy Terms .(refer to link below)</p>
             </div>
             <div class="pj-checkout-1">
-                <input type="checkbox" >
+                <input type="checkbox" id="pj-booking-term">
                 <p>I agree with the Booking Conditions</p>
             </div>
         </div>
@@ -340,7 +340,7 @@
 
         <!-- complete booking start -->
         <div id="pj-complete-booking">
-            <button ><b>COMPLETE BOOKING</b></button>
+            <button onclick="pjsetuser()"><b>COMPLETE BOOKING</b></button>
         </div>
        
         <!-- complete booking end -->
@@ -358,7 +358,7 @@
         </div>
         <div id="pj-your-stay-2">
             <div>Total:</div>
-            <div>RS 0.00</div>
+            <div id="pj-total-span">RS 0.00</div>
         </div>
     </div>
     <!-- your stay end -->
@@ -395,3 +395,34 @@
     </div>
 </body>
 </html>
+<script>
+    let bucketls=JSON.parse(localStorage.getItem("total"))||[]
+    let userls=JSON.parse(localStorage.getItem("user"))||[]
+    let pjsetprice=()=>{
+        
+    
+
+    let price=document.getElementById("pj-total-span")
+    console.log(bucketls)
+    price.innerText=bucketls;
+   
+   
+    }
+    let arr=[]
+    let pjsetuser=()=>{
+        let firstname=document.getElementById("pj-first-name").value;
+    console.log(firstname)
+    let lastname=document.getElementById("pj-last-name").value;
+    console.log(lastname)
+        let obj={
+            firstname,
+            lastname
+        }
+        arr.push(obj)
+    localStorage.setItem("user",JSON.stringify(arr))
+
+    
+    window.location.href="thank.html"
+    }
+    
+</script>

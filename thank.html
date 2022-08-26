@@ -30,12 +30,27 @@
         <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
         <h2>Congratulations </h2>
         <h3>You have Successfully Booked Your Room</h3>
-       <h2>Pablo Pande</h2>
+       <h2 id="pj-user-fullname">Pablo Pande</h2>
        <h3>Room is for 2 Adults</h3>
        <h5>You can check-in after 2:00 PM </h5>
        <h5>You can check-out before 12:00 PM </h5>
        <h4>Thank you so much for Visiting</h4>
        <h4>You may have Good Day!</h4>
+       <h3>Thank You!!!!</h3>
     </div>
 </body>
 </html>
+<script>
+   
+    let userls=JSON.parse(localStorage.getItem("user"))||[]
+   
+  
+    let pjsetuser=()=>{
+       let fullname=document.getElementById("pj-user-fullname")
+       let firstname=userls[0].firstname
+       let lastname=userls[0].lastname
+       console.log(firstname,lastname)
+       fullname.innerText=firstname+" "+lastname
+    }
+    pjsetuser()
+</script>

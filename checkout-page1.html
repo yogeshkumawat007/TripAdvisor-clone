@@ -134,10 +134,10 @@
                     <P>BATHTUB 40 INCH FLAT TV SAFE</P>
                 </div>
                 <div >
-                    <p >RS.6,600</p>
+                    <p id="pj-hotel-price-1">RS.3,600</p>
                     <p>Per Night</p>
                     <p>Excluding Taxes & Fees</p>
-                    <button >BOOK NOW</button>
+                    <button onclick="pjsetprice()"">BOOK NOW</button>
                 </div>
             </div>
         </div>
@@ -161,7 +161,7 @@
                     <P>BATHTUB 40 INCH FLAT TV SAFE</P>
                 </div>
                 <div >
-                    <p id="pj-hotel-price-1">RS.6,000</p>
+                    <p id="pj-hotel-price-1">RS.3,600</p>
                     <p>Per Night</p>
                     <p>Excluding Taxes & Fees</p>
                     <button onclick="pjsetprice()">BOOK NOW</button>
@@ -186,7 +186,7 @@
         <hr>
         <div id="pj-your-stay-2">
             <div>Total:</div>
-            <div><span id="pj-total-span">RS 0.00</span></div>
+            <div id="pj-total-span">RS 0.00</div>
         </div>
     </div>
     <!-- your stay end -->
@@ -224,12 +224,12 @@
 </body>
 </html>
 <script>
+    let bucketls=JSON.parse(localStorage.getItem("total"))||[]
     let pjsetprice=()=>{
         let total=document.getElementById("pj-hotel-price-1").innerText;
-    console.log(total)
-
-    let price=document.getElementsByClassName("pj-total-span")
-    price.innerText=total;
+    localStorage.setItem("total",JSON.stringify(total))
+    window.location.href="checkout page 2.html"
     }
     
+   
 </script>
