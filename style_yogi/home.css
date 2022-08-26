@@ -127,7 +127,7 @@
 /* travellers choice best of best section */
 
 .travellers_choice_section_yogi{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     background-color: #004f32;
     gap: 0 2%;
@@ -137,24 +137,42 @@
 
 .travellers_frist_Div_yogi{
     width: 20%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 .travellers_frist_Div_yogi > div{
-    width: 50%;
-    border: 1px solid red;
+    width: 60%;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* line-height: 1.4; */
     
+}
+.travellers_frist_Div_yogi > div > h2{
+    margin-top: 20%;
+    color: white;
+
+}
+
+.travellers_frist_Div_yogi > div > button{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8% 12%;
+    font-weight: bold;
+    border-radius: 32px;    
+    cursor: pointer;
+    margin-top: 40%;    
+}
+
+.travellers_frist_Div_yogi > div > button:hover{
+    background-color: #333;
+    border: 1px solid #333;
 }
 
 .travellers_frist_Div_yogi > div img{
     width: 80%;
-}
-
-.travellers_second_div_yogi{
-    width: 60%;
-    border: 1px solid blue;
-
-}
-.getOutThere_secondDiv_yogi > img{
-    width: 40%;
+    
 }
 
