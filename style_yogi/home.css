@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar2_yogi{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 1%;
+    gap: 0 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.navbar2_element_yogi{
+    display: flex;
+    margin: auto;
+    width: 15%;
+    border: 1px solid black;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    /* font-weight: bold; */
+}
+
+.navbar2_element_yogi a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar2_element_yogi:hover{
+    cursor:pointer;
+    background-color: black;
+    color: white;
+}
+
+.navbar2_element_yogi a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/* navbar2nd */
+.img_with_search_box{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    background-image: url("https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp");
+    background-repeat: no-repeat;
+    height: 348px;
+    background-size: cover;
+}
+
+#search_city_name{
+    width: 60%;
+    padding: 1.7%;
+    margin: auto;
+    position:absolute;
+    left: 19%;
+    top: 43%;
+    border-radius: 100px;
+    border: 1px solid rgb(212, 210, 210);
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* You might like these section */
+/* h1{
+    text-align: center;
+} */
+
+/* get out there section */
+.getOutThere_section_yogi{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    padding: 1%;
+    margin-bottom: 5%;
+
+}
+.getOutThere_fristDiv_yogi{
+    /* border: 1px solid red; */
+    width: 60%;
+    padding: 1%;
+    background-color: #faf1ed;    
+
+}
+
+.getOutThere_fristDiv_yogi > div{
+    line-height: 1.2;
+    align-items: left;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.getOutThere_fristDiv_yogi > button{
+    padding: 2% 3%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.getOutThere_secondDiv_yogi{
+    width: 40%;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f7/1d/4d/caption.jpg?w=1000&h=-1&s=1");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: auto; */
+    padding: 3%;
+}
+
+.getOutThere_secondDiv_yogi > img{
+    /* background-color: red; */
+    width: 30%;
+    position: relative;
+    top: 25%;
+    left: 75%;    
+}
+
+/* travellers choice best of best section */
+
+.travellers_choice_section_yogi{
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #004f32;
+    gap: 0 2%;
+    margin-bottom: 5%;
+    justify-content: space-around;
+}
+
+.travellers_frist_Div_yogi{
+    width: 20%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.travellers_frist_Div_yogi > div{
+    width: 60%;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* line-height: 1.4; */
+    
+}
+.travellers_frist_Div_yogi > div > h2{
+    margin-top: 20%;
+    color: white;
+
+}
+
+.travellers_frist_Div_yogi > div > button{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8% 12%;
+    font-weight: bold;
+    border-radius: 32px;    
+    cursor: pointer;
+    margin-top: 40%;    
+}
+
+.travellers_frist_Div_yogi > div > button:hover{
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.travellers_frist_Div_yogi > div img{
+    width: 80%;
+    
+}
+
