@@ -82,6 +82,8 @@ form .txt_field{
 }
 .pass:hover{
     text-decoration: underline;
+    color: black;
+    
 }
 input[type="Submit"]{
     width: 100%;
