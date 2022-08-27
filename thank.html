@@ -11,39 +11,66 @@
             padding: 0%;
         }
         #pj-thank-you{
-            border: 1px solid black;
+            border: 0px solid black;
             /* height: 400px; */
             width: 400px;
             margin: auto;
-            margin-top: 150px;
+            margin-top: 100px;
             text-align: center;
             line-height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         }
         img{
             width: 150px;
             margin-top: 10px;
+        }
+        h2{
+            color: red;
         }
     </style>
 </head>
 <body>
     <div id="pj-thank-you">
         <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
-        <h2>Congratulations </h2>
+        <h2>Congratulations..... </h2>
         <h3>You have Successfully Booked Your Room</h3>
-       <h2 id="pj-user-fullname">Pablo Pande</h2>
-       <h3>Room is for 2 Adults</h3>
-       <h5>You can check-in after 2:00 PM </h5>
-       <h5>You can check-out before 12:00 PM </h5>
-       <h4>Thank you so much for Visiting</h4>
+       <h1 id="pj-user-fullname"></h1>
+       <h3 id="pj-guest"></h3>
+       <h3 id="pj-checkin">You can check-in after 2:00 PM </h3>
+       <h3 id="pj-checkout">You can check-out before 12:00 PM </h3>
        <h4>You may have Good Day!</h4>
        <h3>Thank You!!!!</h3>
     </div>
 </body>
 </html>
 <script>
-   
+    let hotel_data=[
+        {img:"https://be.synxis.com/shs-ngbe-image-resizer/images/hotel/4351/images/room/deluxe_room-king.jpg",
+        name:"hotel name",
+        price:2125,
+        checkin:"24/05/2001",
+        checkout:"25/05/2001",
+        guest:"2 Adults"
+        }
+    ]
     let userls=JSON.parse(localStorage.getItem("user"))||[]
-   
+    let pjcheckin=document.getElementById("pj-checkin")
+        let pjcheckout=document.getElementById("pj-checkout")
+        let pjguest=document.getElementById("pj-guest")
+        hotel_data.forEach(function(ele){
+        let date1=document.createElement("h3")
+        date1.innerText= "On"+" "+ele.checkin
+
+        pjcheckin.append(date1)
+
+        let date2=document.createElement("h3")
+        date2.innerText="On"+" "+ele.checkout
+        pjcheckout.append(date2)
+
+        let guest=document.createElement("h3")
+        guest.innerText="Room is for"+" "+ele.guest
+        pjguest.append(guest)
+    })
   
     let pjsetuser=()=>{
        let fullname=document.getElementById("pj-user-fullname")
