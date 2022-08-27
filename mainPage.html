@@ -47,21 +47,21 @@
          </div>
          <div class="guest_buttons">
             <div class="rooms">
-               <span class="minus_btn_vw"> -</span>
+               <span  id="same_styles_btn_vw"  class="minus_btn_vw"> -</span>
                <span id="num">0</span>
-               <span class="plus_btn_vw"> + </span>
+               <span id="same_styles_btn_vw"  class="plus_btn_vw"> + </span>
 
             </div>
             <div class="adults">
-                <span class="minus_btn_vw2"> -</span>
+                <span id="same_styles_btn_vw"  class="minus_btn_vw2"> -</span>
                 <span id="num2">0</span>,
-                <span class="plus_btn_vw2"> + </span>
+                <span id="same_styles_btn_vw"  class="plus_btn_vw2"> + </span>
  
              </div>
                <div class="children">
-                <span class="minus_btn_vw3"> -</span>
+                <span id="same_styles_btn_vw"  class="minus_btn_vw3"> -</span>
                 <span id="num3">0</span>
-                <span class="plus_btn_vw3"> + </span>
+                <span  id="same_styles_btn_vw" class="plus_btn_vw3"> + </span>
  
              </div>
 
@@ -73,11 +73,11 @@
  
        <div class="select_price" > 
         <span>sort by : </span>
-         <select name="" id="select_price">
-        <option value="">by price.. </option>
+         <select name="" id="select_price" onchange="filterCards(this)">
+        <option value="">---by price--- </option>
 
-        <option value="">Low to High (price) </option>
-        <option value="">High to Low (price) </option>
+        <option value="LH">Low to High (price) </option>
+        <option value="HL">High to Low (price) </option>
   
       </select></div>
          

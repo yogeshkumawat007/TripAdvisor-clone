@@ -182,25 +182,25 @@ height: 39px;
 #num , #num2,#num3{
     font-size:22px;
     font-weight: bolder;
-    padding: 6px 20px 6px 20px;
+    padding: 6px 26px 6px 26px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .minus_btn_vw,.minus_btn_vw2,.minus_btn_vw3{
     font-size:22px;
     font-weight: bolder;
-    padding: 6px 25px 6px 25px;
+    padding: 6px 20px 6px 20px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .plus_btn_vw,.plus_btn_vw2,.plus_btn_vw3{
     font-size:22px;
     font-weight: bolder;
     margin-top: 20px;
-    padding: 6px 25px 6px 25px;
+    padding: 6px 20px 6px 20px;
     /* border: 1px solid red;  */
     /* margin-left: px; */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.plus_btn_vw:hover{
+#same_styles_btn_vw:hover{
     background-color: rgb(216, 216, 216);
     transition: 0.3s ease-in-out;
 }
@@ -429,8 +429,10 @@ height: 39px;
     width: 63%;
     height: 65vh;
     margin-left: 26%;
+    
   }
   .pricedaata{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     width: 100%;
   }
 

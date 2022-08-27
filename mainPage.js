@@ -14,7 +14,8 @@ let object=[{
    img:"https://media-cdn.tripadvisor.com/media/photo-s/23/e1/94/9e/exterior-view.jpg",
    rev:"Customer service was fantastic. Room was decent size and comfortable. Food was good. Exceeded my expectations in all aspects as I had very little hope. Especially staffs were very helpful and great service. Close to the airport but a bit far from the city.",
    name:"Gokulam Grand Hotel & Spa",
-   price:7391
+   price:7391,
+   id:"hotel"
    
    },
    
@@ -34,7 +35,8 @@ let object=[{
    rev:`Nilamoy Boro good cleaning service. I like everything.
    Everything is good. Good hotel. Food is nice. Outside hotel good Weather. 👍 I want everybody come there. Very good very great place very good hotel`,
    name:"The Lalit Ashok",
-   price:6905
+   price:6905,
+   id:"hotel"
    
    
    },
@@ -54,7 +56,8 @@ let object=[{
    img:"https://media-cdn.tripadvisor.com/media/photo-s/21/72/2a/92/hotel-exterior.jpg",
    rev:"Dear Guest Thank you for taking the time to complete our guest satisfaction survey. We are pleased to See that you enjoyed your time at the hotel. On behalf of our entire staff at Country Inn And Suites By Radisson, Bengaluru Hebbal Road we thank you for your business And we hope to See you again when your travels ",
    name:"Country Inn & Suites by Radisson, Bengaluru Hebbal Road",
-   price:4704
+   price:4704,
+   id:"hotel"
    
    
    },
@@ -72,7 +75,8 @@ let object=[{
    img:"https://media-cdn.tripadvisor.com/media/photo-s/1c/d8/69/86/exterior-view.jpg",
    rev:"Very Good and polite front office staff Specially Mr Kaushik with a good hospitality. Hotel is very beautiful with many recreation facilities. Food is very tasty and reasonable.Thank you once again for your amazing hospitality",
    name:"ibis Bengaluru City Centre",
-   price:5320
+   price:5320,
+   id:"hotel"
    
    
    },
@@ -81,29 +85,72 @@ let object=[{
    img:"https://media-cdn.tripadvisor.com/media/photo-s/13/ee/7b/bc/signature-club-resort.jpg",
    rev:`Dear Guest, We are so thankful that you took the time to share your feedback with us. It’s our pleasure to provide the best possible service to our guests and it always makes our day when the guest appreciates it. Thanks again and we hope to make your next visit just as positive! Regards, Gurmeet Singh`,
    name:"Signature Club Resort",
-   price:5398
+   price:5498
    
    
    },
    {
-   img:"https://media-cdn.tripadvisor.com/media/photo-s/23/e1/91/9f/exterior-view.jpg",
+   img:"https://media-cdn.tripadvisor.com/media/photo-s/11/d1/d2/21/sap-golden-grande.jpg",
    rev:`We visited the executive lounge @ JW Marriott Bengaluru. The host Mr Shlok Shanu was extremely helpful. The spread of food items in the lounge was generous (even for the vegetarians) and we enjoyed our time. Highly Recommended!`,
    name:"Clarks Exotica Convention Resort & Spa",
-   price:8392
+   price:8200,
+   id:"hotel"
    
    
    },
    {
-    img:"https://media-cdn.tripadvisor.com/media/photo-s/21/c8/6b/4f/entrance.jpg",
+    img:"https://media-cdn.tripadvisor.com/media/photo-s/04/c6/34/d3/sheetal-residency.jpg",
     rev:"Customer service was fantastic. Room was decent size and comfortable. Food was good. Exceeded my expectations in all aspects as I had very little hope. Especially staffs were very helpful and great service. Close to the airport but a bit far from the city.",
-    name:"vaibhav's village cafe",
-    price:2391
+    name:"Urban Valley 3 star guest house",
+    price:4550,
+    id:"guest_house"
     
     },
 
-]
 
-function append_cards(object){
+    {
+      img:"https://media-cdn.tripadvisor.com/media/photo-s/05/56/a6/37/terrace-gardens-guest.jpg",
+      rev:"Customer service was fantastic. Room was decent size and comfortable. Food was good. Exceeded my expectations in all aspects as I had very little hope. Especially staffs were very helpful and great service. Close to the airport but a bit far from the city.",
+      name:"Guest 5 star all rounder house",
+      price:2511,
+    id:"guest_house"
+
+      
+      },
+      
+      {
+        img:"https://media-cdn.tripadvisor.com/media/photo-s/13/06/2b/6c/img-20180327-wa0013-largejpg.jpg",
+        rev:"Customer service was fantastic. Room was decent size and comfortable. Food was good. Exceeded my expectations in all aspects as I had very little hope. Especially staffs were very helpful and great service. Close to the airport but a bit far from the city.",
+        name:"RVA Luxury resort and guest house",
+        price:2002,
+    id:"guest_house"
+
+        
+        }, 
+        {
+          img:"https://media-cdn.tripadvisor.com/media/photo-s/1d/41/58/ea/hotel-ur-comforts.jpg",
+          rev:"Customer service was fantastic. Room was decent size and comfortable. Food was good. Exceeded my expectations in all aspects as I had very little hope. Especially staffs were very helpful and great service. Close to the airport but a bit far from the city.",
+          name:"Tribe cort golden guest house",
+          price:222391,
+          id:"guest_house"
+
+          
+          }, 
+          {
+            img:"https://media-cdn.tripadvisor.com/media/photo-s/11/3d/df/e9/rooms.jpg",
+            rev:"Customer service was fantastic. Room was decent size and comfortable. Food was good. Exceeded my expectations in all aspects as I had very little hope. Especially staffs were very helpful and great service. Close to the airport but a bit far from the city.",
+            name:"Fab-Hotel cratz guest house",
+            price:1391,
+            id:"guest_house"
+
+            
+            },
+
+          
+          ]
+                
+                
+                function append_cards(object){
 
     object.forEach((ele) => {
       
@@ -224,6 +271,8 @@ function append_cards(object){
 
 append_cards(object);
 
+
+// buuton counts function
 let room_count=0;
 
 document.querySelector(".plus_btn_vw").addEventListener("click",function(){
@@ -264,6 +313,20 @@ document.querySelector(".guest").addEventListener("click",function(){
  });
 
 
+//  price filter 
+
+function filterCards(values){
+  let value=values.value;
+
+}
+
+
+
+
+
+
+
+//  google map........
  let getmap=()=>{
            
     let map=document.getElementById("gmap_canvas")
