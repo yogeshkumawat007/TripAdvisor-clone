@@ -60,12 +60,12 @@
 
 #download{
     display: flex;
-    border: 1px solid lightcoral;
+    /* border: 1px solid lightcoral; */
     height: 200px;
     margin-bottom: 80px;
 }
 #download>div{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     width: 50%;
 }
 #download .dow1{
@@ -77,6 +77,10 @@ background-color: rgb(255, 241, 243);
 #download .dow3{
     background-color: rgb(254, 190, 217);
     }
+    #download .dow4{
+        background-color:  #FFF7E1;
+    }
+
 
 .dow2 img{
 width: 100%;
@@ -85,9 +89,9 @@ height: 100%;
 .btn_p{
 background-color: black;
 color: white;
-border-radius: 28px;
+border-radius: 30px;
 font-size: 16px;
-padding: 10px 15px;
+padding: 10px 20px;
 margin-top: 40px;
 margin-left: 18px;
 }
@@ -95,14 +99,16 @@ margin-left: 18px;
     margin-left: 18px;
     margin-top: 40px;
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #download .text{
-    margin-left: 18px;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cir_main{
     /* border: 1px solid red; */
-    height: 11px;
+    height: 12px;
     gap: 3px;
     display: flex;
     margin: 6px;
@@ -110,8 +116,8 @@ margin-left: 18px;
 }
  .cir_main >div {
     border-radius: 50%;
-    height: 10px;
-    width: 3%;
+    height: 12px;
+    width: 2.8%;
     border: 1px solid  #00aa6c;
     background-color:  #00aa6c
 }
@@ -187,7 +193,7 @@ width: 30px;
     padding: 1%;
     position: absolute;
     z-index: 1;
-    margin-top: -30%;
+    margin-top: -26%;
     /* margin-right: -80%; */
     border-radius: 50%;
     background-color: white;
@@ -207,6 +213,68 @@ h4{
 h2{
     margin-bottom: 16px;
 }
+/* faq */
+.accordion_item{
+    /* background-color: rgb(202, 202, 212); */
+    margin-bottom: 10px;
+    /* padding: 1rem 0; */
+}
+.accordion_link{
+    font-size: 1.2rem;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 1rem 0;
+    cursor: pointer;
+    
+}
+.accordion_link:hover{
+    text-decoration: underline;
+}
+
+.list  {
+    padding-left: 20px;
+    text-decoration: underline;
+    color: rgb(77, 77, 77);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+.answer{
+    overflow: hidden; 
+    max-height: 0;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+   
+}
+.accordion_item:target .answer{
+    max-height: 20rem;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+.ans{
+    font-size:20px;
+    /* font-weight: bold; */
+    color: rgb(77, 77, 77);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+
+
+
 
 
 

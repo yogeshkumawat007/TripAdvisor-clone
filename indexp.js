@@ -164,5 +164,11 @@ append(places);
 
 
 // faq
+const  faqs = document.querySelectorAll(".accordion_item");
+faqs.forEach(accordion_item =>{
+    accordion_item.addEventListener("click",()=>{
+        accordion_item.classList("active");
+    })
+})
 
 
