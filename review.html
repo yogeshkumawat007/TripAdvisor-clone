@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+           
+           
+        }
+        #pj-review{
+            border: 0px solid red;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+             width: 30%;
+             margin: auto;
+             margin-top: 100px;
+             line-height: 30px;
+             display: none;
+             position: fixed;
+             z-index: 1;
+             padding: 15px;
+           
+        }
+        #pj-review div{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        #pj-review input{
+            margin-top: 10px;
+        }
+        #pj-review-des input{
+           
+            padding: 30px 0px;
+            margin-top: 10px;
+        }
+        #pj-review-rating{
+            user-select: none;
+        }
+        .pj_review_rating_button{
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            margin-left: 10px;
+            margin-top: 5px;
+            border: 1px solid rgba(6, 187, 6, 0.694);
+            cursor: pointer;
+        }
+        .pj_review_rating_button:hover{
+            background-color: rgba(6, 187, 6, 0.694);
+            border: 1px solid rgba(0, 0, 0, 0.468);
+            cursor: pointer;
+        }
+        #review_submit,#closereview{
+            width: 50%;
+            padding: 5px;
+            border:2px solid rgba(4, 160, 4, 0.785);
+            background-color: black;
+            color: white;
+            border-radius: 10%;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+        #closereview{
+            width: 30%;
+            padding: 5px;
+            border:2px solid rgba(4, 160, 4, 0.785);
+            background-color: black;
+            color: white;
+            border-radius: 10%;
+            margin-left: 0%;
+        }
+        #review_submit:hover,#closereview:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="review()">open review</button>
+    <div id="pj-review">
+        <button onclick="closereview()" id="closereview">close</button>
+        <div id="pj-review-name">
+            <p>Your Name :-</p>
+            <input type="text" placeholder="Enter your name" id="review_name">
+        </div>
+        <div id="pj-review-hotel-name">
+            <p>Enter Hotel Name :-</p>
+            <input type="text" placeholder="Enter hotel name" id="review_hotel">
+        </div>
+        <div id="pj-review-hotel-img">
+            <p>Enter Hotel Image Url :-</p>
+            <input type="url" placeholder="Enter hotel image url" id="review_hotelurl">
+        </div>
+        <div id="pj-review-des">
+            <P>Add Your Review :-</P>
+            <input type="text" placeholder="Enter your review" id="review_des">
+        </div>
+        <div id="pj-review-rating">
+          <p>Add Rating :-</p>
+          <div id="pj-review-rating-1">
+ 
+            <button class=" pj_review_rating_button" ></button>
+            <button class=" pj_review_rating_button" ></button>
+            <button class=" pj_review_rating_button" ></button>
+            <button class=" pj_review_rating_button" ></button>
+            <button class=" pj_review_rating_button" ></button>
+           
+          </div>
+         
+        </div >
+        <button onclick="setreview()" id="review_submit">
+            Submit
+        </button>
+    </div>
+
+   
+  
+
+   
+</body>
+</html>
+<script>
+    let bucketls=JSON.parse(localStorage.getItem("review"))||[]
+    let allstar=document.querySelectorAll(".pj_review_rating_button")
+   
+   // console.log(allstar)
+
+    allstar.forEach((star,i)=>{
+        star.onclick=function(){
+            let current=i+1;
+            allstar.forEach((star,j)=>{
+                if(current>=j+1){
+                    star.style.backgroundColor="rgba(6, 187, 6, 0.694)";
+                     star.style.border="1px solid rgba(0, 0, 0, 0.468)";
+                }else{
+                    star.style.backgroundColor="white";
+                    star.style.border="1px solid rgba(6, 187, 6, 0.694)";
+                }
+               // console.log(j+1)
+            })
+           // console.log(star,i)
+        }
+    })
+
+    let review=()=>{
+        document.getElementById("pj-review").style.display="block";
+
+    }
+    let closereview=()=>{
+        document.getElementById("pj-review").style.display="none";
+
+    }
+    let arr=[];
+    let setreview=()=>{
+        let name=document.getElementById("review_name").value;
+    let hotel=document.getElementById("review_hotel").value;
+    let hotelurl=document.getElementById("review_hotelurl").value;
+    let des=document.getElementById("review_des").value;
+   
+    //console.log(name,hotel,hotelurl,des)
+        let obj={
+            name,
+            hotel,
+            hotelurl,
+            des,
+            
+        }
+        arr.push(obj)
+        //console.log(arr)
+        localStorage.setItem("review",JSON.stringify(arr))
+    }
+</script>
