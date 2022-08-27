@@ -1,212 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore hotel </title>
     <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="sidebar.css">
     <!-- <link rel="stylesheet" href="hotelCard.css"> -->
 </head>
+
 <body>
     <div class="hBanner_vw">
-        <img src="https://images.pexels.com/photos/248867/pexels-photo-248867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="loading.">
+        <img src="https://images.pexels.com/photos/248867/pexels-photo-248867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="loading.">
     </div>
-     
+
     <div class="Title_vw">
-        <span id="Title_city_vw"> Benguluru  </span> <span id="title_vw"> Places and Hotels to Stay</span>
+        <span id="Title_city_vw"> Benguluru </span> <span id="title_vw"> Places and Hotels to Stay</span>
     </div>
 
     <span id="Data_title_vw">------ Enter Dates to find the best value ------</span>
-     
 
-        <div class="date1">check In...<br><input type="date" id="checkIN_vw"></div>
-        <div class="date2">check Out...<br><input type="date" id="checkOut_vw"></div>
-         <div class="guest">Guest...<div class="guestDetails_vw">
-         
+
+    <div class="date1">check In...<br><input type="date" id="checkIN_vw"></div>
+    <div class="date2">check Out...<br><input type="date" id="checkOut_vw"></div>
+    <div class="guest">Guest...<div class="guestDetails_vw">
+
             <span><span>1 </span> room ,</span>
-            <span> <span>2 </span> adults  ,</span>
+            <span> <span>2 </span> adults ,</span>
             <span><span>0 </span> childrens</span>
 
 
         </div>
-    </div> 
+    </div>
 
- <!-- just for style -->
+    <!-- just for style -->
 
-   <div class="green"></div>
-   <div class="red"></div>
-   <div class="grey"></div>
+    <div class="green"></div>
+    <div class="red"></div>
+    <div class="grey"></div>
 
     <!-- adding guest div's -->
     <div class="adding_guest_vw">
         <p class="cross_button">x</p>
-         <div class="guest_img">
+        <div class="guest_img">
             <img src="guest.jpg" alt="loading....">
-         </div>
-         <div class="guest_buttons">
+        </div>
+        <div class="guest_buttons">
             <div class="rooms">
-               <span class="minus_btn_vw"> -</span>
-               <span id="num">0</span>
-               <span class="plus_btn_vw"> + </span>
+                <span class="minus_btn_vw"> -</span>
+                <span id="num">0</span>
+                <span class="plus_btn_vw"> + </span>
 
             </div>
             <div class="adults">
-                <span class="minus_btn_vw"> -</span>
-                <span id="num">0</span>
-                <span class="plus_btn_vw"> + </span>
- 
-             </div>
-               <div class="children">
-                <span class="minus_btn_vw"> -</span>
-                <span id="num">0</span>
-                <span class="plus_btn_vw"> + </span>
- 
-             </div>
+                <span class="minus_btn_vw2"> -</span>
+                <span id="num2">0</span>,
+                <span class="plus_btn_vw2"> + </span>
 
-             <button class="update_btn_vw">Update</button>
-        
+            </div>
+            <div class="children">
+                <span class="minus_btn_vw3"> -</span>
+                <span id="num3">0</span>
+                <span class="plus_btn_vw3"> + </span>
+
+            </div>
+
+            <button class="update_btn_vw">Update</button>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="select_price">
+        <span>sort by : </span>
+        <select name="" id="select_price">
+            <option value="">by price.. </option>
+            <option value="">Low to High (price) </option>
+            <option value="">High to Low (price) </option>
+
+        </select>
+    </div>
+
+
+
+
+    <div class="main_hotel_container">    
+
+        <div class="appendingCards">
+            <!-- hotel cards  -->
+        </div>
+
+        <!-- <div class="priceData">
+            <img class="pricedaata" src="daata.jpg" alt="">
+        </div> -->
+
+        <!-- side  bar   -->
+        <div id="pj-sidebar-main">
+        <div id="pj-container-sidebar">
+            <!-- <input type="text" id="pj-map"> -->
+            <!-- <input id="map_submit" type="submit" onclick="getmap()"> -->
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0"></iframe></div>
+            </div>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>COVID-19</h3>
+            <div>
+                <input type="checkbox">
+                <p>Properties taking safety measures</p>
+            </div>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Deals</h3>
+            <div>
+                <input type="checkbox">
+                <p>Free cancellation</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Reserve now,pay at saty</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Properties with special offers</p>
             </div>
         </div>
 
-         
-    
+        <div id="pj-sidebar-price">
+            <p>Price + estimated taxes and fees payable at booking</p>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Property type</h3>
+            <div>
+                <input type="checkbox">
+                <p>Hotels</p>
+                <p>1303</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Guest Houses</p>
+                <p>568</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Lodges</p>
+                <p>302</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Specility lodgings</p>
+                <p>229</p>
+            </div>
+            <p>Show all</p>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Popular Types</h3>
+            <div>
+                <input type="checkbox">
+                <p>Breakfast included</p>
+                <p>648</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>5 Star</p>
+                <p>33</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>4 Star</p>
+                <p>48</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p><button class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button"></button></p>
+                <p>129</p>
+            </div>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Amenities</h3>
+            <div>
+                <input type="checkbox">
+                <p>Free Wifi</p>
+                <p>927</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Breakfast included</p>
+                <p>648</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Pool</p>
+                <p>107</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Free parking</p>
+                <p>644</p>
+            </div>
+            <p>Show all</p>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Distances</h3>
+            <div>
+                <input type="checkbox">
+                <p>Getway of India</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Colaba</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Shree Siddhivinayak</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Chhatrapati Shivaji Terminus</p>
+            </div>
+            <p>Show all</p>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Neighbourhoods</h3>
+            <div>
+                <input type="checkbox">
+                <p>Western Suburbs</p>
+                <p>989</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>South Mumbai</p>
+                <p>498</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Andheri</p>
+                <p>472</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Estern Suburbs</p>
+                <p>352</p>
+            </div>
+            <p>Show all</p>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Traveller rating</h3>
+            <div>
+                <input type="checkbox">
+                <p><button class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button"></button></p>
+
+                <p>129</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p><button class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button-1"></button></p>
+                <p>& Up</p>
+                <p>608</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p><button class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button"></button><button class="pj-button-1"></button><button
+                        class="pj-button-1"></button></p>
+                <p>& Up</p>
+                <p>1066</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p><button class="pj-button"></button><button class="pj-button"></button><button
+                        class="pj-button-1"></button><button class="pj-button-1"></button><button
+                        class="pj-button-1"></button></p>
+                <p>& Up</p>
+                <p>1294</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Hotel class</h3>
+            <div>
+                <input type="checkbox">
+                <p>5 Star</p>
+                <p>33</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>4 Star</p>
+                <p>48</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>3 Star</p>
+                <p>389</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>2 Star</p>
+                <p>265</p>
+            </div>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Style</h3>
+
+            <div>
+                <input type="checkbox">
+                <p>Budget</p>
+                <p>595</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Mid-range</p>
+                <p>372</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Luxury</p>
+                <p>52</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Family-friendly</p>
+                <p>317</p>
+            </div>
+            <p>Show all</p>
+        </div>
+        <hr>
+        <div class="pj-sidebar-1">
+            <h3>Brands</h3>
+            <div>
+                <input type="checkbox">
+                <p>OYO</p>
+                <p>554</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Treebo</p>
+                <p>75</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>FabHotels</p>
+                <p>66</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>Taj</p>
+                <p>5</p>
+            </div>
+            <p>Show all</p>
+        </div>
+
+        <div>
+            <img id="sidebar_img"
+                src="https://s0.2mdn.net/dynamic/2/10780029/cdn.intelligencebank.com/us/share/YqKv/ZR9b6/4vzM4/original/brenton-hotel_1647363577777_brenton-hotel.jpeg"
+                alt="">
+        </div>
 
 
-<!-- hotel cards  -->
-<div class="appendingCards">
-<div class="container1_vw">
-    <div class="cont1_vw">
-      <img
-        id="hotel_image_vw"
-        src="https://media-cdn.tripadvisor.com/media/photo-s/21/67/34/57/night-shot-exterior-at.jpg"
-        alt="loading......"
-      />
     </div>
 
-    <div class="cont2_vw">
-      <a class="hotelName_vw" href="">A great hotel - Taj hotel .
-      </a>
-      <span id="sponsor">sponsered</span>
-      
-         <!-- container 1 for hotel brand and button -->
-      <div class="cont2-1_vw">
-            <div class="cont1-1_vw">
-              <img
-                id="img_brand_logo"
-                src="https://static.tacdn.com/img2/branding/hotels/Agoda.png"
-                alt="loading"
-              />
-
-              <p class="Price_vw"> 5040 Rs.</p>
-
-              <button class="view_deal_btn">View deal</button>
-            </div>
-
-              <!-- container 2 hotel services -->
-            <div class="cont1-2_vw">
-               <div class="service">
-                <img src="services.jpg" alt="">
-               </div>
-            </div>
-
-              <!-- container 3 for review and all -->
-            <div class="cont1-3_vw">
-
-              <div class="review_img">
-                <img src="review.jpg" alt="loading.......">
-              </div>
-              
-              <img  id="review2" src="reviewImg.jpg" alt="loading....">
-              <div class="c_review"  id="customer_review">
-              <!-- <p id="customer_review">Lorem ipsum dolor,icing elit. Consequatur Lorem ipsum dolor,icing elit. Consequaturrecusandae fugiat expedita repellat, rem repellendus magni.Lorem ipsum dolor,icing elit. Consequatur Lorem ipsum dolor,icing elit. Consequaturrecusandae fugiat expedita repellat, rem repellendus Quidem iste accusantium repellat?</p> -->
-                      Lorem ipsum dolor, sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed impedit ab minima sequi quos magni. Quasi molestias, nemo voluptatibus tempore mollitia optio temporibus! Unde aperiam alias nemo explicaboconsectetur adipisicing elit. Sed impedit ab minima sequi quos magni. Quasi molestias, nemo voluptatibus tempore mollitia optio temporibus! Unde aperiam alias nemo explicabo saepe dolor.
-              </div>
-
-            </div>
 
 
-      </div>
-    </div>
-  </div>
- <!-- new card start from here -->
-
-
- <div class="container1_vw">
-  <div class="cont1_vw">
-    <img
-      id="hotel_image_vw"
-      src="https://media-cdn.tripadvisor.com/media/photo-s/21/67/34/57/night-shot-exterior-at.jpg"
-      alt="loading......"
-    />
-  </div>
-
-  <div class="cont2_vw">
-    <a class="hotelName_vw" href="">A great hotel - Taj hotel .
-    </a>
-    <span id="sponsor">sponsered</span>
-    
-       <!-- container 1 for hotel brand and button -->
-    <div class="cont2-1_vw">
-          <div class="cont1-1_vw">
-            <img
-              id="img_brand_logo"
-              src="https://static.tacdn.com/img2/branding/hotels/Agoda.png"
-              alt="loading"
-            />
-
-            <p class="Price_vw"> 5040 Rs.</p>
-
-            <button class="view_deal_btn">View deal</button>
-          </div>
-
-            <!-- container 2 hotel services -->
-          <div class="cont1-2_vw">
-             <div class="service">
-              <img src="services.jpg" alt="">
-             </div>
-          </div>
-
-            <!-- container 3 for review and all -->
-          <div class="cont1-3_vw">
-
-            <div class="review_img">
-              <img src="review.jpg" alt="loading.......">
-            </div>
-            
-            <img  id="review2" src="reviewImg.jpg" alt="loading....">
-            <div class="c_review"  id="customer_review">
-            <!-- <p id="customer_review">Lorem ipsum dolor,icing elit. Consequatur Lorem ipsum dolor,icing elit. Consequaturrecusandae fugiat expedita repellat, rem repellendus magni.Lorem ipsum dolor,icing elit. Consequatur Lorem ipsum dolor,icing elit. Consequaturrecusandae fugiat expedita repellat, rem repellendus Quidem iste accusantium repellat?</p> -->
-                    Lorem ipsum dolor, sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed impedit ab minima sequi quos magni. Quasi molestias, nemo voluptatibus tempore mollitia optio temporibus! Unde aperiam alias nemo explicaboconsectetur adipisicing elit. Sed impedit ab minima sequi quos magni. Quasi molestias, nemo voluptatibus tempore mollitia optio temporibus! Unde aperiam alias nemo explicabo saepe dolor.
-            </div>
-
-          </div>
-
-
-    </div>
-  </div>
-</div>
-
-
-  </div>
-
-       
- 
 
 </body>
 <script src="mainPage.js"></script>
+
 </html>
-<script>
-    document.querySelector(".guest").addEventListener("click",function(){
-       let div=document.querySelector(".adding_guest_vw");
-       div.style.display="flex";
-    });
-
-    document.querySelector(".cross_button").addEventListener("click",function(){
-       let div=document.querySelector(".adding_guest_vw");
-       div.style.display="none";
-
-    })
-    
-
-</script>
