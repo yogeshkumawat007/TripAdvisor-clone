@@ -569,7 +569,6 @@ document.querySelector(".minus_btn_vw").addEventListener("click", function () {
 
 function roomCount() {
   room_count++;
-  console.log(room_count);
   let display = document.getElementById("num");
   display.innerText = room_count;
 }
@@ -660,45 +659,43 @@ let getmap = () => {
 
 getmap();
 
+//---------------------------------------------------------------------------------------------
 
+// filter cards 
 
-function filterCardsL(values){
-  let ans; 
-   
-   return ans =object.sort(function(a, b){
-      return parseInt(a.price)-parseInt(b.price)});
-   
+let filter_value=document.getElementById("select_price")
+filter_value.addEventListener("change",()=>{
+  let filtered_data;
+if(filter_value.value=="LH"){
+  filtered_data=object.sort((a,b)=>{
 
+   return (a.price)-(b.price);
+
+})
 }
+else if(filter_value.value=="HL"){
+   filtered_data=object.sort((a,b)=>{
 
-function filterCardsH(values){
-
-  document.querySelector(".appendingCards").innerHTM=""
-  let ans; 
-   
-   return ans =object.sort(function(a, b){
-      return parseInt(b.price)-parseInt(a.price)});
-   
-
-}
-
-function filterCards(values){
-if(values.value=="LH"){
-
-  append_cards(filterCardsH())
+    return (b.price)-(a.price);
+ 
+ })
 
 }
 else{
-
-  append_cards(object)
-
-}
+  filtered_data=object;
 }
 
-// append_cards(object)
+append_cards(filtered_data)
 
-filterCards();
+
+})
+// -----------------------------------------------------------------
+
+append_cards(object)
+
+
 function append_cards(object) {
+  document.querySelector(".appendingCards").innerHTML=null;
   object.forEach((ele) => {
     let container1_vw = document.createElement("div");
     container1_vw.className = "container1_vw";
@@ -744,15 +741,20 @@ function append_cards(object) {
     button.addEventListener("click",()=>{
       var data=ele;
      localStorage.setItem("hotel_data",JSON.stringify(data))
+
+     if(room_count!=0&&adult_count!=0){
      if(flag1==true&&flag2==true){
 
        window.location.href="checkout-page1.html"
      }
 
      else{
-
-      alert("first select Check in or Check out date")
+       alert("first select Check in or Check out date")
      }
+    }
+    else{
+      alert("fill guest details")
+    }
 
     });
 
@@ -813,7 +815,7 @@ function append_cards(object) {
 }
 
 
-
+//-----------------------------------------------------------------------------
 
 function checkIn(ele){
 
@@ -839,4 +841,27 @@ function sendData(){
     alert("check both dates")
   }
 }
+
+// guest data function
+
+document.querySelector(".update_btn_vw").addEventListener("click",()=>{
+document.getElementById("r").innerText=room_count;
+
+document.getElementById("a").innerText=adult_count;
+document.getElementById("c").innerText=children_count;
+
+let obj_guest={
+  room:room_count,
+  adult:adult_count,
+  children:children_count
+};
+localStorage.setItem("guest_details",JSON.stringify(obj_guest))
+
+let div = document.querySelector(".adding_guest_vw");
+
+div.style.display = "none";
+
+
+})
+
 

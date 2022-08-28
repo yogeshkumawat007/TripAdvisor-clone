@@ -479,15 +479,20 @@
   }
 
   .select_price{
-    margin-left: 68%;
+    margin-left:70%;
     margin-top: 1%;
     margin-bottom: 10px;
     color: rgb(79, 79, 79);
 
   }
 
+#r,#a,#c{
+  font-weight: bolder;
+  color: rgb(255, 185, 8);
+  font-size: 16px;
+}
+
   .priceData{
-    /* border: 1px solid red; */
     width: 63%;
     height: 65vh;
     margin-left: 26%;
@@ -498,20 +503,7 @@
     width: 100%;
   }
 
-
-
-.select_price {
-  margin-top: 1%;
-  margin-bottom: 10px;
-  color: rgb(79, 79, 79);
-  /* background-color: black; */
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
 .priceData {
-  /* border: 1px solid red; */
   width: 63%;
   height: 65vh;
   margin-left: 26%;

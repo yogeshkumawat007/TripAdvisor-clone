@@ -28,9 +28,9 @@
     <div class="date2">check Out...<br><input  onchange="checkOut(this)" type="date" id="checkOut_vw"></div>
     <div class="guest">Guest...<div class="guestDetails_vw">
 
-            <span><span>1 </span> room ,</span>
-            <span> <span>2 </span> adults ,</span>
-            <span><span>0 </span> childrens</span>
+            <span><span id="r">0 </span> room ,</span>
+            <span> <span id="a">0 </span> adults ,</span>
+            <span><span id="c">0 </span> childrens</span>
 
 
         </div>
@@ -46,6 +46,7 @@
     <div class="adding_guest_vw">
         <p class="cross_button">x</p>
         <div class="guest_img">
+        
             <img src="guest.jpg" alt="loading....">
         </div>
 
@@ -78,10 +79,11 @@
             
         </div>
        
+       
  
     <div class="select_price">
         <span>sort by : </span>
-         <select name="" id="select_price" onchange="filterCards(this)">
+         <select name="" id="select_price" >
         <option value="">---by price--- </option>
 
         <option value="LH">Low to High (price) </option>
@@ -141,17 +143,17 @@
         <div class="pj-sidebar-1">
             <h3>Property type</h3>
             <div>
-                <input type="checkbox">
+                <input  id="ch_hotel" type="checkbox" value="hotel">
                 <p>Hotels</p>
                 <p>1303</p>
             </div>
             <div>
-                <input type="checkbox">
+                <input id="ch_guest"  type="checkbox" value="guest">
                 <p>Guest Houses</p>
                 <p>568</p>
             </div>
             <div>
-                <input type="checkbox">
+                <input id="ch_lodge" type="checkbox" value="lodge">
                 <p>Lodges</p>
                 <p>302</p>
             </div>
