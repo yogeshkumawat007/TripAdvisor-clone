@@ -1,0 +1,281 @@
+.checkoutPage2{
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+}
+
+h1{
+    margin-bottom: 1%;
+}
+
+#pj-main-box {
+  /* border: 1px solid black; */
+  width: 60%;
+  /* margin-left: 5%; */
+  /* background-color: black; */
+  /* padding: 1%; */
+}
+
+#pj-top {
+  border: 1px solid red;
+  /* background-color: red; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+  
+}
+#pj-filter-div {
+  border: 1px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
+  display: flex;
+  justify-content: end;
+  /* background-color: red; */
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 1%;
+}
+
+#pj-rate-div {
+  border: 1px solid green;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
+  margin-bottom: 15px;
+  padding: 1%;
+}
+
+#pj-contact-info {
+  border: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fef9f9;
+  padding: 1%;
+}
+/* #pj-contact-info input {
+  margin-right: 5%;
+  margin-top: 3%;
+} */
+/* #pj-contact-info-1-select {
+  border: 1px solid black;
+  padding: 3px;
+  margin-top: 3.2%;
+  width: 30%;
+} */
+#pj-address {
+  border: 1px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fef9f9;
+  padding: 1%;
+  /* margin-top: 1%; */
+}
+
+#pj-address > h1{
+    margin-bottom: 1%;
+}
+
+#pj-address > input {
+  width: 60%;
+  padding: 1%;
+  /* background-color: red; */
+  margin-bottom: 1%;
+  box-sizing: border-box;
+}
+
+#pj-join {
+  border: 0px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fef9f9;
+  padding: 1%;
+}
+#pj-join-1 {
+  display: flex;
+  border: 1px solid red;
+  gap: 2%;
+  text-align: justify;
+}
+#pj-join-11 {
+  /* width: 5%; */
+  /* padding: 10%; */
+  height: 10%;
+  /* background-color: red; */
+}
+
+#pj-payment-main {
+  border: 0px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fef9f9;
+  padding: 1%;
+}
+#pj-payment input {
+    width: 60%;
+    padding: 1%;
+    /* background-color: red; */
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    /* gap: 2%; */
+}
+.pj-contact-info-1 {
+  display: flex;
+  /* border: 1px solid orange; */
+  width: 100%;
+  gap: 2%;
+  box-sizing: border-box;
+}
+
+.pj-contact-info-1 > input,select{
+    width: 31%;
+    margin: 0;
+    /* background-color: red; */
+    padding: 1%;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+}
+
+.email_input > input{
+    /* background-color: red; */
+    width: 31%;
+    padding: 1%;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+}
+
+#pj-payment-1 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  background-color: red;
+}
+#pj-stay {
+  border: 0px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: #fef9f9;
+  padding: 1%;
+}
+
+#pj-checkout-div {
+  border: 1px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+  padding: 1%;
+}
+
+#pj-checkout-div p{
+    margin-left: 2%;
+}
+
+
+#pj-checkout-div div {
+  border: 0px solid blue;
+  width: 50%;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  line-height: 25px;
+  /* justify-content: flex-start; */
+  /* margin-left: -20%; */
+}
+.pj-checkout-1 {
+  width: 50px;
+  margin-top: 1%;
+
+}
+
+#pj-complete-booking{
+    padding: 1%;
+}
+
+#pj-complete-booking > button {
+  /* border: 0px solid brown; */
+  width: 30%;
+  padding: 1% 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+
+#pj-your-stay {
+  border: 1px solid red;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: absolute;
+  width: 28%;
+  /* line-height: 20px; */
+  left: 62vw;
+  top: 52vh;
+  padding: 1%;
+}
+#pj-your-stay-2 {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pj-member {
+  border: 1px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: absolute;
+  line-height: 40px;
+  width: 28%;
+  left: 62vw;
+  top: 75vh;
+  background-color: #fef9f9;
+  padding: 1%;
+}
+#pj-member-2 li {
+  display: flex;
+  margin-top: 10px;
+}
+#pj-member-2 img {
+  width: 10%;
+  margin-right: 10px;
+  border: 1px solid red;
+}
+
+
+#pj-member-11 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+#pj-your-stay-3 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+button {
+  width: 50%;
+  padding: 5px;
+  border: 2px solid rgba(4, 160, 4, 0.785);
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+input:hover {
+  border: 2px solid red;
+}

@@ -275,6 +275,15 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+/* demo */
+
+#second_p{
+    display: flex;
+    gap: 0 1%;
+}
+#second_p img{
+    width: 100%;
+}
 
 
 

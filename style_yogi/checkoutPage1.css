@@ -1,0 +1,150 @@
+
+/* for pranay's checkout-1 page */
+
+.checkoutPage {
+    /* margin: 0%;
+    padding: 0%; */
+    width: 90%;
+    margin: auto;
+    line-height: 25px;
+    /* height: 200vh; */
+    border: 1px solid red;
+}
+
+
+#pj-top{
+    border: 0px solid red;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.20) 0px 5px 5px;
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#pj-filter-div{
+    border: 0px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.20) 0px 5px 5px;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+#pj-rate-div{
+    border: 0px solid green;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 15px;
+
+}
+#pj-container img{
+    width: 230px;
+    /* width: 100%; */
+}
+
+#container{
+    border: 1px solid red;
+}
+
+#pj-container{
+   
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 60%;
+    margin-bottom: 20px;
+    /* margin-left: 5%; */
+     background-color: #fef9f9;
+     margin-top: 10px;
+     padding: 10px;
+}
+#pj-hotel-div{
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 
+#pj-hotel-div > img{
+    width: 100%;
+} */
+#pj-hotel-div-1{
+border:1px solid yellow;
+display: flex;
+width: 200%;
+justify-content: space-around;
+padding-right: 0%;
+/* padding-top: 30px; */
+  
+}
+#pj-hotel-div-1 div{
+    border: 1px solid green;
+  padding-top: 0%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#pj-hotel-div-1 div:last-child{
+    border: 0px solid green;
+  margin-top: 30px;
+  justify-content: space-between;
+  text-align: right;
+  
+}
+#pj-hotel-div-1 div:last-child button{
+    width: 70%;
+    padding: 5px;
+    border:2px solid rgba(4, 160, 4, 0.785);
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+#pj-hotel-div-1 div:last-child button:hover{
+    background-color: white;
+    color: black;
+}
+#pj-your-stay{
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: absolute;
+    width: 25%;
+    line-height: 40px;
+    left: 65vw;
+    top: 42vh;
+    padding: 1%;
+}
+#pj-your-stay-2{
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pj-member{
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: absolute;
+    line-height: 40px;
+    width: 25%;
+    left: 65vw;
+    top: 75vh;
+    padding: 1%;
+}
+button{
+    cursor: pointer;
+}
+#pj-member-2 li{
+    display: flex;
+    margin-top: 10px;
+    
+}
+#pj-member-2 img{
+    width: 10%;
+    margin-right: 10px;
+    border: 1px solid red;
+}
+#pj-member-11,#pj-your-stay-3{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+#pj-hotel-name:hover{
+    color: red;
+}

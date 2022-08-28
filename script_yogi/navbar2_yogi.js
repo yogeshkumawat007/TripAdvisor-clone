@@ -14,7 +14,8 @@ searchCityName.addEventListener("keypress", function(event) {
 
 
 function hotels(){
-    console.log("add path to hotels page")
+    // console.log("add path to hotels page")
+    window.location.href = "/mainPage.html"
 }
 
 function ThingsToDo(){

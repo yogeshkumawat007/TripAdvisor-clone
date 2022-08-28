@@ -1,27 +1,23 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   cursor: pointer;
-
-
-}
+} */
 
 .appendingCards{
   /* border: 1px solid red; */
   width: 80%;
 }
 
+.hBanner_vw {
+  margin-top: 10px;
+}
 
 .hBanner_vw>img {
   width: 100%;
-  height: 34vh;
-  
-
+  height: 44vh;
 }
 
-.hBanner_vw {
-  margin-top: 100px;
-}
 
 .Title_vw {
   position: absolute;

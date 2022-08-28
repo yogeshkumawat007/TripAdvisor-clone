@@ -1,5 +1,10 @@
+/* {
+    margin: 0;
+    padding: 0;
+} */
 #app{
-    border: 1px solid black;
+    border: 1px solid #FCC735;
+    box-sizing: border-box;
     height: 1000px;
     background-color: #FCC735;
 }
@@ -85,6 +90,9 @@
 .priya{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 27px;
+/* margin-top: 30%; */
+/* padding-top: 10%;
+color:  red; */
 
 
 

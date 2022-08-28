@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/style_yogi/navbar_yogi.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+
+    <link rel="stylesheet" href="/style_yogi/checkoutPage1.css">
     <style>
-        body{
+        /* body{
             height: 200vh;
         }
         *{
@@ -16,131 +24,18 @@
             margin: auto;
            line-height: 25px;
           
-        } 
-        #pj-top{
-            border: 0px solid red;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.20) 0px 5px 5px;
-            display: flex;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        #pj-filter-div{
-            border: 0px solid blue;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.20) 0px 5px 5px;
-            display: flex;
-            justify-content: end;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        #pj-rate-div{
-            border: 0px solid green;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            margin-bottom: 15px;
-
-        }
-        img{
-            width: 230px;
-        }
-      
-        #pj-container{
-           
-            border: 0px solid black;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            width: 60%;
-            margin-bottom: 20px;
-            margin-left: 5%;
-             background-color: #fef9f9;
-             margin-top: 10px;
-             padding: 10px;
-        }
-        #pj-hotel-div{
-            border: 0px solid black;
-            display: flex;
-            width: 100%;
-       
-        }
-        #pj-hotel-div-1{
-            border:0px solid yellow;
-            display: flex;
-            width: 200%;
-          justify-content: space-between;
-          padding-right: 0%;
-            padding-top: 30px;
-          
-        }
-        #pj-hotel-div-1 div{
-            border: 0px solid green;
-          padding-top: 0%;
-          padding-bottom: 20px;
-          margin-bottom: 20px;
-        }
-        #pj-hotel-div-1 div:last-child{
-            border: 0px solid green;
-          margin-top: 30px;
-          justify-content: space-between;
-          text-align: right;
-          
-        }
-        #pj-hotel-div-1 div:last-child button{
-            width: 50%;
-            padding: 5px;
-            border:2px solid rgba(4, 160, 4, 0.785);
-            background-color: black;
-            color: white;
-            border-radius: 10%;
-        }
-        #pj-hotel-div-1 div:last-child button:hover{
-            background-color: white;
-            color: black;
-        }
-        #pj-your-stay{
-            border: 0px solid red;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            position: absolute;
-            width: 20%;
-            line-height: 40px;
-            left: 65vw;
-            top: 30vh;
-        }
-        #pj-your-stay-2{
-            border: 0px solid green;
-            display: flex;
-            justify-content: space-between;
-        }
-        #pj-member{
-            border: 0px solid black;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            position: absolute;
-            line-height: 40px;
-            width: 20%;
-            left: 65vw;
-            top: 60vh;
-        }
-        #pj-member-2 li{
-            display: flex;
-            margin-top: 10px;
-            
-        }
-        #pj-member-2 img{
-            width: 25px;
-            margin-right: 10px;
-        }
-        #pj-member-11,#pj-your-stay-3{
-            width: 100%;
-            background-color: black;
-            color: white;
-            text-align: center;
-            margin-top: 5px;
-        }
-        #pj-hotel-name:hover{
-            color: red;
-        }
+        }  */
+        
        
     </style>
 </head>
 <body>
 
-    <!-- top start -->
+    <!-- navbar -->
+    <div id="navbar_yogi"></div>
+
+    <div class="checkoutPage">
+            <!-- top start -->
     <div id="pj-top">
         <!-- <button><-</button> -->
         <h1>
@@ -161,7 +56,10 @@
 
     <!-- hotel details div start -->
 
-    <div id="container"></div>
+    <div id="container">
+        <!-- append data here -->
+    </div>
+
     <div id="pj-container">
         <div id="pj-hotel-div">
             <div id="pj-hotel-div-img">
@@ -288,10 +186,29 @@
            
         </div>
     </div>
+    
+    </div>
+
+    <!-- footer -->
+    <div id="footer_by_real_yogi" class="lowerFooter">
+
 </body>
 </html>
-<script>
+<script type="module"  >
 
+    import {footer,navbar} from "./components/footer.js"
+    // console.log(footer)  
+    let container = document.getElementById("footer_by_real_yogi")
+
+    let navContainer = document.getElementById("navbar_yogi");
+    // console.log(navbar)
+  
+    container.innerHTML = footer();
+    navContainer.innerHTML = navbar();
+  
+  </script>
+
+<script>
     let hotel_data=[
         {img:"https://be.synxis.com/shs-ngbe-image-resizer/images/hotel/4351/images/room/deluxe_room-king.jpg",
         name:"hotel name",
@@ -301,35 +218,39 @@
         guest:"2 Adults"
         }
     ]
-        let container=document.getElementById("container")
-        let imgbox=document.getElementById("pj-hotel-div-img")
-        let desbox=document.getElementById("pj-hotel-div-1-des")
-        let desbox1=document.getElementById("pj-hotel-div-1-des1")
-        let desbox2=document.getElementById("pj-hotel-div-2")
-        let pjcheckin=document.getElementById("pj-checkin")
-        let pjcheckout=document.getElementById("pj-checkout")
-        let pjguest=document.getElementById("pj-guest")
-        
-        
-        let bucketls=JSON.parse(localStorage.getItem("total"))||[]
+    let container=document.getElementById("container")
+    let imgbox=document.getElementById("pj-hotel-div-img")
+    let desbox=document.getElementById("pj-hotel-div-1-des")
+    let desbox1=document.getElementById("pj-hotel-div-1-des1")
+    let desbox2=document.getElementById("pj-hotel-div-2")
+    let pjcheckin=document.getElementById("pj-checkin")
+    let pjcheckout=document.getElementById("pj-checkout")
+    let pjguest=document.getElementById("pj-guest")
     
     
+    // let bucketls=JSON.parse(localStorage.getItem("total"))||[];
+
+    let hotel_data_vw = JSON.parse(localStorage.getItem("hotel_data"));
+    console.log("hotel_data",hotel_data_vw)
+
     
-        let pjsetprice=()=>{
+    
+    let pjsetprice=()=>{
        
     window.location.href="checkout page 2.html"
     }
     
     
-    hotel_data.forEach(function(ele){
+   function append_hotel_data ({img,name,price}){
        
-        let img=document.createElement("img")
-        img.src=ele.img;
-        imgbox.append(img)
+        let img1=document.createElement("img")
+        img1.src=img;
+        // console.log(img)
+        imgbox.append(img1)
 
-        let name=document.createElement("h2")
-        name.id="pj-hotel-name"
-        name.innerText=ele.name;
+        let h2=document.createElement("h2")
+        h2.id="pj-hotel-name"
+        h2.innerText=name;
 
         
 
@@ -342,11 +263,11 @@
         desbox.append(name,des,des1)
         // div.append(img,name,price,des,des1)
         // container.append(div)
-        let price=document.createElement("p")
-        price.innerText="Rs"+" "+ele.price;
+        let price2=document.createElement("p")
+        price2.innerText=  price;
 
         let price1=document.createElement("p")
-        price1.innerText="per Night";
+        price1.innerText="Per Night";
 
         let des2=document.createElement("p")
         des2.innerText="Night Excluding Taxes & Fees"
@@ -368,19 +289,19 @@
         desbox2.append(des3,des4)
 
         let date1=document.createElement("p")
-        date1.innerText= "On"+" "+ele.checkin
+        date1.innerText= "On"+" "+checkin
 
         pjcheckin.append(date1)
 
         let date2=document.createElement("p")
-        date2.innerText="On"+" "+ele.checkout
+        date2.innerText="On"+" "+checkout
         pjcheckout.append(date2)
 
         let guest=document.createElement("p")
-        guest.innerText=ele.guest
+        guest.innerText=guest
         pjguest.append(guest)
-    })
+    }
    
     
-   
+    append_hotel_data(hotel_data_vw)
 </script>
