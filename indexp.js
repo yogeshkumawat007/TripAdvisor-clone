@@ -162,13 +162,24 @@ function append(arg){
 append(places);
 
 
+// changes place
+// let place = document.getElementsByClassName("changes")
+// console.log(place)
 
-// faq
-const  faqs = document.querySelectorAll(".accordion_item");
-faqs.forEach(accordion_item =>{
-    accordion_item.addEventListener("click",()=>{
-        accordion_item.classList("active");
-    })
-})
+let placename = document.getElementsByClassName("changes");
+// console.log(placename)
+
+for ( let i = 0; i < placename.length; i++ ){
+    let xyz = placename[i].innerText;
+    console.log(xyz);
+    
+    placename[i].innerText = "Lovelin"
+
+    // placename.innerText = "Yogesh";
+}
 
 
+
+// placename.forEach( function(elem){
+//      console.log(elem.innerText)
+// } )

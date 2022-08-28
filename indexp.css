@@ -91,13 +91,13 @@ background-color: black;
 color: white;
 border-radius: 30px;
 font-size: 16px;
-padding: 10px 20px;
-margin-top: 40px;
+padding: 15px 20px;
+margin-top: 20px;
 margin-left: 18px;
 }
 #download h2{
     margin-left: 18px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -218,6 +218,7 @@ h2{
     /* background-color: rgb(202, 202, 212); */
     margin-bottom: 10px;
     /* padding: 1rem 0; */
+    
 }
 .accordion_link{
     font-size: 1.2rem;
@@ -232,6 +233,8 @@ h2{
     cursor: pointer;
     
 }
+
+
 .accordion_link:hover{
     text-decoration: underline;
 }
