@@ -36,17 +36,17 @@
 
     <div class="checkoutPage">
             <!-- top start -->
-    <div id="pj-top">
-        <!-- <button><-</button> -->
+    <!-- <div id="pj-top">
+        <button><-</button>
         <h1>
             Select A Room
         </h1>
-    </div>
-    <div id="pj-filter-div">
+    </div> -->
+    <!-- <div id="pj-filter-div">
         <div>view Result By Rate</div>
         <div>Sort By Lowest Price</div>
         <div>Show Filters</div>
-    </div>
+    </div> -->
     <div id="pj-rate-div">
         <H2>ROOM ONLY RATE</H2>
         <p>FREE WIFI | 15% DIS FOOD AND BEVERAGE</p>
@@ -304,4 +304,15 @@
    
     
     append_hotel_data(hotel_data_vw)
+</script>
+<script>
+    if ( nickname.length >= 1 ){
+
+let namePaste = document.getElementById("navbar_signIn_yogi");
+
+    nickname.forEach(function(elem){
+    namePaste.innerText = elem.nickName;
+
+})
+}
 </script>

@@ -19,5 +19,5 @@ function hotels(){
 }
 
 function ThingsToDo(){
-    console.log("add path to things to do page")
+    window.location.href = "indexp.html"
 }

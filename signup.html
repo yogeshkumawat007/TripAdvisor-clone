@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
-    <title>Signup</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup.css">
+  <title>Signup</title>
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
     <div class="center">
-    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
-    <h1>Join to unlock the best of Tripadvisor</h1>  
-    <form method="POST" action="">
-      <div class="txt_field">
-        <input type="text" name="name" required />
-        <span></span>
-        <label>Name</label>
-      </div>
-      <div class="txt_field">
-        <input type="email" name="email" required />
-        <span></span>
-        <label>Email</label>
-      </div>
-      <div class="txt_field">
-        <input type="password" name="password" required />
-        <span></span>
-        <label>Password</label>
-      </div>
-      <div class="txt_field">
-        <input type="password" name="cpassword" required />
-        <span></span>
-        <label>Confirm Password</label>
-      </div>
-      <input name="submit" type="Submit" value="Join" /> 
-      <div class="signup_link">
-      Have an Account ? <a href="./login.html">Sign In</a>   
-      <p>By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement</p>
-      </div>
-    </form>
+      <img
+        src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg"
+        alt="">
+      <h1>Join to unlock the best of Tripadvisor</h1>
+      <form >
+        <div class="txt_field">
+          <input type="text" name="name" id="name" required />
+          <span></span>
+          <label>Nick Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="email" name="email" id="email" required />
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="password" id="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="cpassword" id="" required />
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        <input name="submit" type="Submit" value="Join" />
+        <div class="signup_link">
+          Have an Account ? <a href="/login.html">Sign In</a>
+          <p>By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement</p>
+        </div>
+      </form>
     </div>
-    </div> 
+  </div>
 </body>
+
 </html>
+<script>
+
+  let form = document.querySelector("form");
+  form.addEventListener("submit", myForm);
+
+  let arr = [];
+
+  function myForm(event){
+    event.preventDefault();
+
+    let formData = {
+      nickName: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+    }
+
+    // console.log("formData", formData);
+    arr.push(formData);
+    localStorage.setItem("nickName",JSON.stringify(arr));
+    alert("Registration Successful ")
+    window.location.href = "/login.html"
+
+  }
+
+</script>

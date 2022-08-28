@@ -2,7 +2,7 @@ function navbar () {
 return `
 <div class="home_main_navbar_yogi">
 <div class="main_navbar_logo_yogi">
-  <a href="#"
+  <a href="/index.html"
     ><img
       src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
       alt="Tripadvisor_logo"

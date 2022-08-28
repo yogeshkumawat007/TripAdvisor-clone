@@ -14,7 +14,7 @@
             <!-- <h1>Login</h1> -->
             <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
             <h1>Welcome Back.</h1>
-            <form action="" method="POST">
+            <form >
             <div class="txt_field">
                 <input type="email" name="email" required>
                 <span></span>
@@ -38,3 +38,18 @@
     
 </body>
 </html>
+<script>
+
+
+let form = document.querySelector("form");
+  form.addEventListener("submit", myForm);
+
+  function myForm(event){
+    event.preventDefault();
+
+    // console.log("here")
+    alert("Login Successful ")
+    window.location.href = "/index.html"
+  }
+
+</script>

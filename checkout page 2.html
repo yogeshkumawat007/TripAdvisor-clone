@@ -29,10 +29,10 @@
                 <a href="checkout-page1.html"> Guest Details</a>
             </h1>
         </div>
-        <div id="pj-filter-div">
+        <!-- <div id="pj-filter-div">
             <div>I PREFER MEMBERS SIGN IN</div>
 
-        </div>
+        </div> -->
         <div id="pj-rate-div">
             <H2>WELCOME BACK!</H2>
             <p>Travel Agent Information</p>
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="email_input">
-                    <input type="text" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address">
                     <p>This is the email we will send your confirmation to.</p>
                 </div>
 
@@ -267,12 +267,12 @@
 
     let date = JSON.parse(localStorage.getItem("date"));
     console.log("date: ",date)
+    
+    let guestDetail = JSON.parse(localStorage.getItem("guest_details"));
+    console.log("guestDetail",guestDetail)
 
     let hotel_data_vw = JSON.parse(localStorage.getItem("hotel_data"));
     console.log("hotel_data",hotel_data_vw)
-
-    let guestDetail = JSON.parse(localStorage.getItem("guest_details"));
-    console.log("guestDetail",guestDetail)
 
     let appendPrice = hotel_data_vw.price
     console.log("appendDate1:",appendPrice)
@@ -289,30 +289,7 @@
     let total = document.getElementById("pj-total-span")
     total.innerText = hotel_data_vw.price;
 
-    
-
-    // function appendDate({checkIn,checkOut}){
-    //     // let date1 = document.createElement("p")
-    //     let checkinDate = document.getElementById("pj-checkin")
-    //     date1.innerText = "Check-in:- On" + " " + checkIn;
-
-    //     pjcheckin.append(date1)
-
-    //     let date2 = document.createElement("p")
-    //     date2.innerText = "Check-out:- On" + " " + checkOut;
-    //     pjcheckout.append(date2)
-
-    //     let guest = document.createElement("p")
-    //     guest.innerText = "Adult:" + guestDetail.adult;
-    //     pjguest.append(guest)
-
-    //     let price = document.createElement("p")
-    //     price.innerText = "Rs." + " " + appendPrice;
-    //     total.append(price)
-    // }
-
-
-    let arr = []
+    // let arr = []
     let pjsetuser = () => {
         let firstname = document.getElementById("pj-first-name").value;
         console.log(firstname)
@@ -322,11 +299,13 @@
             firstname,
             lastname
         }
-        arr.push(obj)
-        localStorage.setItem("user", JSON.stringify(arr))
+        // arr.push(obj)
+        localStorage.setItem("user", JSON.stringify(obj))
 
 
         window.location.href = "thank.html"
     }
+
+    
 
 </script>

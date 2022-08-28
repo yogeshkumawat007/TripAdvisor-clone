@@ -1,5 +1,5 @@
 .checkoutPage2{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90%;
     margin: auto;
 }
@@ -16,17 +16,17 @@ h1{
   /* padding: 1%; */
 }
 
-#pj-top {
+/* #pj-top {
   border: 1px solid red;
-  /* background-color: red; */
+  background-color: red;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
   display: flex;
   text-align: left;
-  margin-bottom: 20px;
-  
-}
+  margin-bottom: 20px;  
+} */
+
 #pj-filter-div {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
   display: flex;
   justify-content: end;
@@ -37,14 +37,14 @@ h1{
 }
 
 #pj-rate-div {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 5px 5px;
   margin-bottom: 15px;
   padding: 1%;
 }
 
 #pj-contact-info {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
@@ -63,7 +63,7 @@ h1{
   width: 30%;
 } */
 #pj-address {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
@@ -96,7 +96,7 @@ h1{
 }
 #pj-join-1 {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 2%;
   text-align: justify;
 }
@@ -167,7 +167,7 @@ h1{
 }
 
 #pj-checkout-div {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
@@ -197,45 +197,47 @@ h1{
 
 #pj-complete-booking{
     padding: 1%;
+    /* border: 1px solid red; */
+    margin: 1% 0;
 }
 
 #pj-complete-booking > button {
   /* border: 0px solid brown; */
   width: 30%;
-  padding: 1% 2%;
-  border-radius: 10px;
-  border: 1px solid black;
+  padding: 1% 0%;
+  border-radius: 5px;
+  /* border: 1px solid black; */
   cursor: pointer;
 }
 
 
 
 #pj-your-stay {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: absolute;
   width: 28%;
   /* line-height: 20px; */
   left: 62vw;
-  top: 52vh;
+  top: 38vh;
   padding: 1%;
 }
 #pj-your-stay-2 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   justify-content: space-between;
 }
 
 #pj-member {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: absolute;
   line-height: 40px;
   width: 28%;
   left: 62vw;
-  top: 75vh;
+  top: 65vh;
   background-color: #fef9f9;
   padding: 1%;
 }
@@ -246,7 +248,7 @@ h1{
 #pj-member-2 img {
   width: 10%;
   margin-right: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
@@ -262,12 +264,13 @@ h1{
   background-color: black;
   color: white;
   text-align: center;
-  margin-top: 5px;
+  padding: 3% 0;
+  margin-bottom: 5px;
 }
 button {
   width: 50%;
   padding: 5px;
-  border: 2px solid rgba(4, 160, 4, 0.785);
+  border: 2px solid black;
   background-color: black;
   color: white;
   border-radius: 10%;

@@ -114,7 +114,7 @@ function navbar () {
       <p>Alerts</p>
     </div>
 
-    <div class="navbar_flex" id="navbar_signIn_yogi">Sign in</div>
+    <div class="navbar_flex" id="navbar_signIn_yogi">Yogesh</div>
   </div>
 </div>
   `

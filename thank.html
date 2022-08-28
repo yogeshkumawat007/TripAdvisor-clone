@@ -11,14 +11,14 @@
             padding: 0%;
         }
         #pj-thank-you{
-            border: 0px solid black;
+            border: 1px solid black;
             /* height: 400px; */
-            width: 400px;
+            width: 40%;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 1%;
             text-align: center;
-            line-height: 50px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            line-height: 2;
+            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
         }
         img{
             width: 150px;
@@ -33,51 +33,39 @@
     <div id="pj-thank-you">
         <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
         <h2>Congratulations..... </h2>
+        <h1 id="pj-user-fullname">Name goes here...</h1>
         <h3>You have Successfully Booked Your Room</h3>
-       <h1 id="pj-user-fullname"></h1>
-       <h3 id="pj-guest"></h3>
-       <h3 id="pj-checkin">You can check-in after 2:00 PM </h3>
-       <h3 id="pj-checkout">You can check-out before 12:00 PM </h3>
+       <h3 id="pj-guest">adult</h3>
+       <h3 >You can check-in after 2:00 PM </h3>
+       <h3 id="pj-checkin" >checkin date</h3>
+
+       <h3 >You can check-out before 12:00 PM </h3>
+       <h3 id="pj-checkout">check-out date</h3>
        <h4>You may have Good Day!</h4>
        <h3>Thank You!!!!</h3>
     </div>
 </body>
 </html>
 <script>
-    let hotel_data=[
-        {img:"https://be.synxis.com/shs-ngbe-image-resizer/images/hotel/4351/images/room/deluxe_room-king.jpg",
-        name:"hotel name",
-        price:2125,
-        checkin:"24/05/2001",
-        checkout:"25/05/2001",
-        guest:"2 Adults"
-        }
-    ]
-    let userls=JSON.parse(localStorage.getItem("user"))||[]
+    
+    let user = JSON.parse(localStorage.getItem("user"));
+    document.getElementById("pj-user-fullname").innerText = `${user.firstname} ${user.lastname}`
+    
+    let date = JSON.parse(localStorage.getItem("date"));
+    console.log("date: ",date)
+    
+    let guestDetail = JSON.parse(localStorage.getItem("guest_details"));
+    console.log("guestDetail",guestDetail)
+
     let pjcheckin=document.getElementById("pj-checkin")
-        let pjcheckout=document.getElementById("pj-checkout")
-        let pjguest=document.getElementById("pj-guest")
-        hotel_data.forEach(function(ele){
-        let date1=document.createElement("h3")
-        date1.innerText= "On"+" "+ele.checkin
+    pjcheckin.innerText = `On ${date.checkIn}`;
 
-        pjcheckin.append(date1)
+    let pjcheckout=document.getElementById("pj-checkout")
+    pjcheckout.innerText = `On ${date.checkOut}`
 
-        let date2=document.createElement("h3")
-        date2.innerText="On"+" "+ele.checkout
-        pjcheckout.append(date2)
+    let pjguest=document.getElementById("pj-guest")
+    pjguest.innerText = `For ${guestDetail.adult} Adult & ${guestDetail.children} Child`;
 
-        let guest=document.createElement("h3")
-        guest.innerText="Room is for"+" "+ele.guest
-        pjguest.append(guest)
-    })
-  
-    let pjsetuser=()=>{
-       let fullname=document.getElementById("pj-user-fullname")
-       let firstname=userls[0].firstname
-       let lastname=userls[0].lastname
-       console.log(firstname,lastname)
-       fullname.innerText=firstname+" "+lastname
-    }
-    pjsetuser()
+     
+    
 </script>
