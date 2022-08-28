@@ -24,8 +24,8 @@
     <span id="Data_title_vw">------ Enter Dates to find the best value ------</span>
 
 
-    <div class="date1">check In...<br><input type="date" id="checkIN_vw"></div>
-    <div class="date2">check Out...<br><input type="date" id="checkOut_vw"></div>
+    <div class="date1">check In...<br><input onchange="checkIn(this)" type="date" id="checkIN_vw"></div>
+    <div class="date2">check Out...<br><input  onchange="checkOut(this)" type="date" id="checkOut_vw"></div>
     <div class="guest">Guest...<div class="guestDetails_vw">
 
             <span><span>1 </span> room ,</span>
@@ -48,42 +48,47 @@
         <div class="guest_img">
             <img src="guest.jpg" alt="loading....">
         </div>
+
         <div class="guest_buttons">
             <div class="rooms">
-                <span class="minus_btn_vw"> -</span>
-                <span id="num">0</span>
-                <span class="plus_btn_vw"> + </span>
+               <span  id="same_styles_btn_vw"  class="minus_btn_vw"> -</span>
+               <span id="num">0</span>
+               <span id="same_styles_btn_vw"  class="plus_btn_vw"> + </span>
+                
 
             </div>
             <div class="adults">
-                <span class="minus_btn_vw2"> -</span>
+                <span id="same_styles_btn_vw"  class="minus_btn_vw2"> -</span>
                 <span id="num2">0</span>,
-                <span class="plus_btn_vw2"> + </span>
-
-            </div>
-            <div class="children">
-                <span class="minus_btn_vw3"> -</span>
+                <span id="same_styles_btn_vw"  class="plus_btn_vw2"> + </span>
+ 
+             </div>
+               <div class="children">
+                <span id="same_styles_btn_vw"  class="minus_btn_vw3"> -</span>
                 <span id="num3">0</span>
-                <span class="plus_btn_vw3"> + </span>
+                <span  id="same_styles_btn_vw" class="plus_btn_vw3"> + </span>
+ 
+             </div>
 
+             <button class="update_btn_vw">Update</button>
             </div>
-
-            <button class="update_btn_vw">Update</button>
-
+        <!-- </div>
+    
+    </div> -->
+            
         </div>
-    </div>
-    </div>
-
+       
+ 
     <div class="select_price">
         <span>sort by : </span>
-        <select name="" id="select_price">
-            <option value="">by price.. </option>
-            <option value="">Low to High (price) </option>
-            <option value="">High to Low (price) </option>
+         <select name="" id="select_price" onchange="filterCards(this)">
+        <option value="">---by price--- </option>
 
-        </select>
-    </div>
-
+        <option value="LH">Low to High (price) </option>
+        <option value="HL">High to Low (price) </option>
+  
+      </select></div>
+         
 
 
 
@@ -93,9 +98,6 @@
             <!-- hotel cards  -->
         </div>
 
-        <!-- <div class="priceData">
-            <img class="pricedaata" src="daata.jpg" alt="">
-        </div> -->
 
         <!-- side  bar   -->
         <div id="pj-sidebar-main">

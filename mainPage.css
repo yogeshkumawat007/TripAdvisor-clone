@@ -6,12 +6,6 @@
 
 }
 
-/* .main_hotel_container{
-  border: 1px solid black;
-  width: 90%;
-  margin: auto;
-} */
-
 .appendingCards{
   /* border: 1px solid red; */
   width: 80%;
@@ -21,6 +15,7 @@
 .hBanner_vw>img {
   width: 100%;
   height: 34vh;
+  
 
 }
 
@@ -182,6 +177,31 @@
   margin-left: 5px;
 }
 
+#num , #num2,#num3{
+    font-size:22px;
+    font-weight: bolder;
+    padding: 6px 26px 6px 26px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.minus_btn_vw,.minus_btn_vw2,.minus_btn_vw3{
+    font-size:22px;
+    font-weight: bolder;
+    padding: 6px 20px 6px 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.plus_btn_vw,.plus_btn_vw2,.plus_btn_vw3{
+    font-size:22px;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding: 6px 20px 6px 20px;
+    /* border: 1px solid red;  */
+    /* margin-left: px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#same_styles_btn_vw:hover{
+    background-color: rgb(216, 216, 216);
+    transition: 0.3s ease-in-out;
+}
 .rooms {
 
   margin-left: 10px;
@@ -207,26 +227,6 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.minus_btn_vw,
-.minus_btn_vw2,
-.minus_btn_vw3 {
-  font-size: 22px;
-  font-weight: bolder;
-  padding: 6px 25px 6px 25px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.plus_btn_vw,
-.plus_btn_vw2,
-.plus_btn_vw3 {
-  font-size: 22px;
-  font-weight: bolder;
-  margin-top: 20px;
-  padding: 6px 25px 6px 25px;
-  /* border: 1px solid red;  */
-  /* margin-left: px; */
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
 
 .plus_btn_vw:hover {
   background-color: rgb(216, 216, 216);
@@ -266,15 +266,16 @@
   width: 100%;
 }
 
+
+
+
+
 .container1_vw {
-  /* position: relative; */
-  border: 1px solid black;
+  
   width: 100%;
-  /* top: 30%; */
   margin-top: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 5px 15px;
   margin-bottom: 35px;
-  /* margin-left: 10%; */
   display: flex;
 }
 
@@ -291,7 +292,7 @@
 }
 
 .cont2_vw {
-  border: 1px solid green ;
+  /* border: 1px solid green ; */
   width: 70%;
   padding: 1%;
 }
@@ -320,9 +321,7 @@
 
 .cont1-3_vw {
   width: 36%;
-  /* overflow-x: scroll; */
-  /* background-color: skyblue; */
-  /* border: 1px solid black; */
+ 
 }
 
 
@@ -445,7 +444,61 @@
   color: rgb(79, 79, 79);
   margin-right: 5%;
   
-}
+  }
+  
+  .service{
+    margin-top: 20px;
+  }
+  .service>img{
+    width: 110px;
+    height: 100px;
+     margin-left: 20%;
+  }
+
+  .appendingCards{
+   
+    width: 71%;
+    margin-left: 24%;
+   
+
+  }
+  .c_review{
+    width:100%;
+    height: 120px;
+    margin-bottom: 7px;
+    overflow: auto;
+  }
+
+  #select_price{
+   
+    width: 310px;
+    height: 33px;
+   color: rgb(79, 79, 79);
+
+
+  }
+
+  .select_price{
+    margin-left: 68%;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    color: rgb(79, 79, 79);
+
+  }
+
+  .priceData{
+    /* border: 1px solid red; */
+    width: 63%;
+    height: 65vh;
+    margin-left: 26%;
+    
+  }
+  .pricedaata{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    width: 100%;
+  }
+
+
 
 .select_price {
   margin-top: 1%;

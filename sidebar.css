@@ -7,16 +7,16 @@ body{
     width: 19%;
     left:3%;
     top:55%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 3px 8px;
     color: rgb(94, 94, 94);
     font-size: 13px;
-    border: 1px solid black;
     margin-top: 2.2%;
    
 }
 #gmap_canvas{
     width: 100%;
-    height: 260px;
+    height: 300px;
+    
 }
 #map_submit{
     padding: 3px 7px;
@@ -52,6 +52,8 @@ body{
     padding-right: 0px;
 } */
 
+
+
 .pj-button{
     width: 15px;
     height: 15px;
@@ -82,7 +84,13 @@ hr{
     margin-bottom: 5px;
 }
 #pj-sidebar-price{
-border: 1px solid gray;
+/* border: 1px solid gray; */
 width: 90%;
 margin: auto;
+margin: 10px;
+font-size: 12px;
+font-family: sans-serif;
+color: rgb(231, 0, 0);
+box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
 }
