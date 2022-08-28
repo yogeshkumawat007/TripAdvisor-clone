@@ -9,7 +9,7 @@
         *{
             margin: 0%;
             padding: 0%;
-           
+         
            
         }
         #pj-review{
@@ -110,6 +110,9 @@
             <button class=" pj_review_rating_button" ></button>
             <button class=" pj_review_rating_button" ></button>
            
+
+            <input id="range" type="range" min="0" max="5" >
+           
           </div>
          
         </div >
@@ -127,7 +130,7 @@
 <script>
     let bucketls=JSON.parse(localStorage.getItem("review"))||[]
     let allstar=document.querySelectorAll(".pj_review_rating_button")
-   
+    console.log(allstar.value);
    // console.log(allstar)
 
     allstar.forEach((star,i)=>{
@@ -137,6 +140,7 @@
                 if(current>=j+1){
                     star.style.backgroundColor="rgba(6, 187, 6, 0.694)";
                      star.style.border="1px solid rgba(0, 0, 0, 0.468)";
+                    
                 }else{
                     star.style.backgroundColor="white";
                     star.style.border="1px solid rgba(6, 187, 6, 0.694)";
@@ -161,17 +165,19 @@
     let hotel=document.getElementById("review_hotel").value;
     let hotelurl=document.getElementById("review_hotelurl").value;
     let des=document.getElementById("review_des").value;
-   
+    let input=document.getElementById("range")
     //console.log(name,hotel,hotelurl,des)
         let obj={
             name,
             hotel,
             hotelurl,
             des,
-            
+            rate:input.value
         }
         arr.push(obj)
         //console.log(arr)
         localStorage.setItem("review",JSON.stringify(arr))
     }
+
+   
 </script>
