@@ -167,13 +167,14 @@ append(places);
 // console.log(place)
 
 let placename = document.getElementsByClassName("changes");
+let city = JSON.parse(localStorage.getItem("cityName"))
 // console.log(placename)
 
 for ( let i = 0; i < placename.length; i++ ){
     let xyz = placename[i].innerText;
     console.log(xyz);
     
-    placename[i].innerText = "Lovelin"
+    placename[i].innerText = city;
 
     // placename.innerText = "Yogesh";
 }

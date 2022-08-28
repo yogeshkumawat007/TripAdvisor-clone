@@ -14,11 +14,11 @@
 </head>
 <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/style_yogi/navbar_yogi.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
-    />
-    
+    /> -->
+    <!-- <link rel="stylesheet" href="/style_yogi/slider3.css"> -->
 
 <body>
 
@@ -30,29 +30,70 @@
         <p>Places to Visit in <span class="changes">Bengaluru</span></p>
 
         <h2>Popular things to do</h2>
-        <div id="first_p">
+
+        <div class="appendData" id="first_p">
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/b6/1c/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>Full-day Tours</h3>
+                <p>from $396.00 per adult</p>
+            </div>
+
+
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/fe/80/1b/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>Car Tours</h3>
+                <p>from $135.00 per adult</p>
+            </div>
+
+
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6c/71/5d/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>City Tours</h3>
+                <p>from $58.67 per adult</p>
+            </div>
+
+
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/7a/a3/b9/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>Private and luxury</h3>
+                <p>from $58.67 per adult</p>
+            </div>
+
+
         </div>
 
         <h2>Ways to tour <span class="changes">Bengaluru</span></h2>
         <span class="text">Book these experiences for a close-up look at Bengaluru.</span>
-        <div id="second_p">
-            <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/a2/b1/90/front-view-of-temple.jpg?w=500&h=400&s=1" alt="test">
-            <h1>heading goes here...</h1>
-        </div>
 
-        
-            <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/a2/b1/90/front-view-of-temple.jpg?w=500&h=400&s=1" alt="test">
-            <h1>heading goes here...</h1>
-        </div>
+        <div class="appendData" id="second_p">
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5d/0b/f4/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>Bus Tours</h3>
+                <p>from $117.34 per adult</p>
+            </div>
 
-        
-            <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/a2/b1/90/front-view-of-temple.jpg?w=500&h=400&s=1" alt="test">
-            <h1>heading goes here...</h1>
-        </div>
 
-        
-            <div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/a2/b1/90/front-view-of-temple.jpg?w=500&h=400&s=1" alt="test">
-            <h1>heading goes here...</h1>
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/7a/a3/b9/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>Car Tours</h3>
+                <p>from $135.00 per adult</p>
+            </div>
+
+
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/fe/80/1b/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>City Tours</h3>
+                <p>from $58.67 per adult</p>
+            </div>
+
+
+            <div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6c/71/5d/caption.jpg?w=300&h=300&s=1" alt="">
+                <h3>Private and luxury</h3>
+                <p>from $58.67 per adult</p>
+            </div>
+
+
         </div>
 
         
@@ -60,7 +101,8 @@
 
         <h2>Recommended for You</h2>
         <span class="text">Tours and activities tailored to your interests.</span>
-        <div id="third_p"></div>
+
+        <div class="appendData" id="third_p"></div>
 
         <p class="mid_text">Top Attractions in <span class="changes">Bengaluru</span></p>
 
@@ -115,7 +157,7 @@
             </div>
         </div>
 
-        <h2>Private Sightseeing Tours</h2>
+        <!-- <h2>Private Sightseeing Tours</h2>
         <div id="third_p"></div>
 
 
@@ -131,7 +173,7 @@
 
         <h2>Food ,Wine & Nightlife</h2>
         <div id="third_p"></div>
-
+ -->
 
         <h2>What travellers are saying </h2>
         <div id="content_p">
@@ -427,6 +469,15 @@
   
     container.innerHTML = footer();
     navContainer.innerHTML = navbar();
+
+     // slider3
+  import slider3 from "./components/slider3.js"
+  console.log(slider3);
+  let sliderOneDiv = document.getElementById("first_p");
+//   sliderOneDiv.innerHTML = slider3();
+    
   
   </script>
 <script src="indexp.js"></script>
+<!-- <script src="/script_yogi/slider3.js"></script> -->
+<script src="/script_yogi/data.js"></script>

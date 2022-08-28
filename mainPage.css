@@ -1,8 +1,8 @@
-/* * {
+ /* {
   margin: 0;
   padding: 0;
   cursor: pointer;
-} */
+}  */
 
 .appendingCards{
   /* border: 1px solid red; */
@@ -11,6 +11,7 @@
 
 .hBanner_vw {
   margin-top: 10px;
+  /* position: relative; */
 }
 
 .hBanner_vw>img {
@@ -23,9 +24,14 @@
   position: absolute;
   /* z-index:1; */
   top: 18%;
-  left: 26%;
+  left: 0%;
+  text-align: center;
   /* border: 2px solid rgb(204, 53, 53); */
+  width: 100%;
   color: rgb(224, 224, 224);
+  /* color: red; */
+  font-size: 42px;
+  /* background-color: red; */
 }
 
 #Title_city_vw,
@@ -35,7 +41,6 @@
   font-family: sans-serif;
   word-spacing: 2px;
   text-transform: capitalize;
-
 }
 
 #Data_title_vw {
@@ -184,8 +189,10 @@
     font-weight: bolder;
     padding: 6px 20px 6px 20px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-.plus_btn_vw,.plus_btn_vw2,.plus_btn_vw3{
+    cursor: pointer;
+  }
+  .plus_btn_vw,.plus_btn_vw2,.plus_btn_vw3{
+  cursor: pointer;
     font-size:22px;
     font-weight: bolder;
     margin-top: 20px;
@@ -350,7 +357,7 @@
   margin-top: 12px;
   margin-bottom: 7px;
   margin-left: 9%;
-
+  cursor: pointer;
 }
 
 .view_deal_btn:hover {
@@ -439,6 +446,7 @@
   height: 33px;
   color: rgb(79, 79, 79);
   margin-right: 5%;
+  cursor: pointer;
   
   }
   
@@ -475,10 +483,12 @@
   }
 
   .select_price{
-    margin-left:70%;
+    margin-left:66%;
     margin-top: 1%;
     margin-bottom: 10px;
     color: rgb(79, 79, 79);
+    /* background-color: red; */
+    /* width: 100%; */
 
   }
 

@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/2ace6b5de8.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/index.css">
+    <!-- <link rel="stylesheet" href="/style_yogi/slider3.css"> -->
   </head>
 
   <body>
@@ -135,7 +136,7 @@
     <!-- <div>ways to tour Jaipur </div> -->
 
     <!-- top destinations -->
-    <!-- <div>Top destinations</div> -->
+    <div id="top_destination" ></div>
 
     <!-- Travellers'choice best of best section -->
     <div class="travellers_choice_section_yogi">
@@ -225,7 +226,14 @@
 
   container.innerHTML = footer();
 
+  // slider3
+  import slider3 from "./components/slider3.js"
+  console.log(slider3);
+  let sliderOneDiv = document.getElementById("top_destination");
+  // sliderOneDiv.innerHTML = slider3();
+
 
 </script>
 <script src="/script_yogi/navbar2_yogi.js"></script>
 <script src="/script_yogi/index.js"></script>
+<script src="/script_yogi/slider3.js"></script>
