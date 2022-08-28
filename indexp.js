@@ -162,7 +162,24 @@ function append(arg){
 append(places);
 
 
+// changes place
+// let place = document.getElementsByClassName("changes")
+// console.log(place)
 
-// faq
+let placename = document.getElementsByClassName("changes");
+// console.log(placename)
+
+for ( let i = 0; i < placename.length; i++ ){
+    let xyz = placename[i].innerText;
+    console.log(xyz);
+    
+    placename[i].innerText = "Lovelin"
+
+    // placename.innerText = "Yogesh";
+}
 
 
+
+// placename.forEach( function(elem){
+//      console.log(elem.innerText)
+// } )

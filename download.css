@@ -9,13 +9,15 @@
     margin: auto;
     height: 90%;
     margin-top: 100px;
+    
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    gap: 40px;
 }
 .app_child div{
     /* border: 1px solid red; */
-    height: 90%;
+    height: 80%;
+   
     
     
     
@@ -25,6 +27,14 @@
     width: 150px;
     margin-top: 30px;
 }
+.app_child_2 .pic1{
+    height: 60px;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 200px;
+    
+}
+
 .app_child div img{
     width: 100%;
     height: 100%;
@@ -38,11 +48,24 @@
 
     
 }
-.app_child p{
-
+.app_child_2 p{
+    /* width: 90%; */
     font-size: 60px;
     font-weight: bold;
     line-height: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -10px;
+    margin-top: 60px;
+
+}
+.app_child_2 img{
+    width: 350px;
+}
+.app_child p{
+
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: -10px;
 
@@ -61,16 +84,22 @@
 }
 .priya{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 24px;
+font-size: 27px;
+
 
 
 }
-
-
 .app_child .pic{
     height: 140px;
     width: 140px;
-    margin-top: 40px;
+    margin-top: 10px;
+}
+.app_child_2 .pic{
+    height: 190px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 200px;
 }
 
 .sec_div{
@@ -81,7 +110,7 @@ font-size: 24px;
 .app_child1{
     width: 50%;
     /* border: 1px solid black; */
-    height: 80%;
+    /* height: 80%; */
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -91,16 +120,17 @@ font-size: 24px;
     margin-top: 80px;
     /* border: 1px solid blue; */
     height: 90%;
+    margin-bottom: 60px;
 
 }
 .app_child1  img{
 width: 90%;
-height: 100%;
+height: 85%;
 }
 .app_child1 p{
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 170px;
 }
@@ -114,3 +144,25 @@ height: 100%;
     height: 750px;
     background-color: #FFCCCC;
 }
+.last_div{
+    height: 600px;
+    /* border: 1px solid black; */
+}
+
+.app_child_2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    gap: 50px;
+}
+.app_child_2 div{
+    /* border: 1px solid black; */
+    height: 80%;
+ 
+}
+
+
+
+
