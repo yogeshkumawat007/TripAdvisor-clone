@@ -32,7 +32,7 @@ https://drive.google.com/file/d/13Xd4dayrCQHfhMJc44u7oCRchVK3pD58/view
 ![tripadvisorProject](https://user-images.githubusercontent.com/107978823/207081884-03e67bfe-a988-474c-afc2-5af27300fe0c.png)
 
 
-- Sihnup Page
+- Signup Page
 ![trip signup](https://user-images.githubusercontent.com/107978823/207082265-9519f926-f6c0-4a28-a3e2-e4fe4f504dc2.png)
 
 - Login Page
